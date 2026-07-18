@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { ThemeSwitch } from "./theme-switch";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,7 @@ import { Button } from "@/components/ui/button";
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,12 +22,12 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Services", href: "#services" },
-    { name: "Industries", href: "#industries" },
-    { name: "Featured Work", href: "#work" },
-    { name: "Methodology", href: "#process" },
-    { name: "Insights", href: "#insights" },
-    { name: "Client Portal", href: "/login" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Work", href: "/work" },
+    { name: "Team", href: "/team" },
+    { name: "Careers", href: "/careers" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -53,21 +55,28 @@ export function Navbar() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           <ul className="flex items-center gap-6">
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <Link
-                  href={link.href}
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href || (pathname.startsWith(link.href) && link.href !== '/');
+              return (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className={`text-sm font-medium transition-colors ${
+                      isActive ? "text-primary" : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
 
           <div className="flex items-center gap-4 border-l border-border pl-4">
             <ThemeSwitch />
-            <Button className="rounded-full px-6 font-medium">Get in Touch</Button>
+            <Link href="/contact">
+              <Button className="rounded-full px-6 font-medium">Get in Touch</Button>
+            </Link>
           </div>
         </nav>
 
@@ -94,16 +103,21 @@ export function Navbar() {
             className="md:hidden glass border-b border-border/40 absolute top-full left-0 right-0 overflow-hidden"
           >
             <div className="px-4 py-6 flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-lg font-medium text-foreground py-2 border-b border-border/50"
-                >
-                  {link.name}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = pathname === link.href || (pathname.startsWith(link.href) && link.href !== '/');
+                return (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`text-lg font-medium py-2 border-b border-border/50 ${
+                      isActive ? "text-primary" : "text-foreground"
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
               <Button className="mt-4 w-full rounded-full">Get in Touch</Button>
             </div>
           </motion.div>
