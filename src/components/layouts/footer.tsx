@@ -41,29 +41,30 @@ export function Footer() {
           <div>
             <h3 className="font-heading font-semibold text-foreground mb-6 text-lg">Services</h3>
             <ul className="flex flex-col gap-3">
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center group">Digital Marketing <ArrowUpRight size={14} className="opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ml-1" /></Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center group">Cloud Architecture <ArrowUpRight size={14} className="opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ml-1" /></Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center group">Software Dev <ArrowUpRight size={14} className="opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ml-1" /></Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center group">Tech Consulting <ArrowUpRight size={14} className="opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ml-1" /></Link></li>
+              <li><Link href="/services" className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center group">Digital Marketing <ArrowUpRight size={14} className="opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ml-1" /></Link></li>
+              <li><Link href="/services" className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center group">Cloud Architecture <ArrowUpRight size={14} className="opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ml-1" /></Link></li>
+              <li><Link href="/services" className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center group">Software Dev <ArrowUpRight size={14} className="opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ml-1" /></Link></li>
+              <li><Link href="/services" className="text-muted-foreground hover:text-primary transition-colors inline-flex items-center group">Tech Consulting <ArrowUpRight size={14} className="opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all ml-1" /></Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-heading font-semibold text-foreground mb-6 text-lg">Company</h3>
             <ul className="flex flex-col gap-3">
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">About Us</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Careers <span className="ml-2 text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary py-0.5 px-2 rounded-full">Hiring</span></Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
-              <li><Link href="#" className="text-muted-foreground hover:text-primary transition-colors">Contact</Link></li>
+              <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">About Us</Link></li>
+              <li><Link href="/careers" className="text-muted-foreground hover:text-primary transition-colors">Careers <span className="ml-2 text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary py-0.5 px-2 rounded-full">Hiring</span></Link></li>
+              <li><Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">Blog</Link></li>
+              <li><Link href="/faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</Link></li>
+              <li><Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-heading font-semibold text-foreground mb-6 text-lg">Portals</h3>
             <ul className="flex flex-col gap-3">
-              <li><Link href="/login" className="text-muted-foreground hover:text-primary transition-colors">Client Portal</Link></li>
-              <li><Link href="/admin" className="text-muted-foreground hover:text-primary transition-colors">Admin Dashboard</Link></li>
-              <li><Link href="/employee" className="text-muted-foreground hover:text-primary transition-colors">Employee Portal</Link></li>
+              <li><Link href="/coming-soon" className="text-muted-foreground hover:text-primary transition-colors">Client Portal</Link></li>
+              <li><Link href="/maintenance" className="text-muted-foreground hover:text-primary transition-colors">Admin Dashboard</Link></li>
+              <li><Link href="/coming-soon" className="text-muted-foreground hover:text-primary transition-colors">Employee Portal</Link></li>
             </ul>
           </div>
         </div>
@@ -73,8 +74,10 @@ export function Footer() {
             &copy; {currentYear} Arohan Tech Solution. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">Terms of Service</Link>
+            <Link href="/privacy-policy" className="text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="text-muted-foreground hover:text-foreground transition-colors">Terms of Service</Link>
+            <Link href="/cookie-policy" className="text-muted-foreground hover:text-foreground transition-colors hidden sm:block">Cookie Policy</Link>
+            <Link href="/disclaimer" className="text-muted-foreground hover:text-foreground transition-colors hidden sm:block">Disclaimer</Link>
           </div>
         </div>
       </div>

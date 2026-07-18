@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/layouts/navbar";
 import { Footer } from "@/components/layouts/footer";
 import { PageHero } from "@/components/sections/page-hero";
-import { FAQSection } from "@/components/sections/faq-section";
+import { FAQAdvanced } from "@/components/sections/faq-advanced";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -22,10 +22,8 @@ export default function FAQPage() {
           breadcrumbs={[{ label: "FAQ", href: "/faq" }]}
         />
 
-        {/* Reuse the animated FAQ accordion from the home page */}
-        <FAQSection />
-        
-        {/* Additional grouped sections can be added here in a real application */}
+        {/* Advanced FAQ Component with Search and Categories */}
+        <FAQAdvanced />
       </main>
       
       <Footer />

@@ -29,6 +29,7 @@ export function Navbar() {
     { name: "Work", href: "/work" },
     { name: "Team", href: "/team" },
     { name: "Careers", href: "/careers" },
+    { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -126,7 +127,9 @@ export function Navbar() {
                   </Link>
                 );
               })}
-              <Button className="mt-4 w-full rounded-full">Get in Touch</Button>
+              <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button className="mt-4 w-full rounded-full">Get in Touch</Button>
+              </Link>
             </div>
           </motion.div>
         )}
