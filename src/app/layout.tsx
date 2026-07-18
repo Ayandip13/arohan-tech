@@ -17,6 +17,19 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Arohan Tech Solution | Digital Marketing & Tech Solutions",
   description: "A luxury digital marketing agency expanding into software development, cloud infrastructure, and technology consulting.",
+  openGraph: {
+    title: "Arohan Tech Solution",
+    description: "Premium digital marketing, software development, and cloud infrastructure.",
+    url: "https://arohantech.com",
+    siteName: "Arohan Tech Solution",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Arohan Tech Solution",
+    description: "Premium digital marketing, software development, and cloud infrastructure.",
+  },
 };
 
 export default function RootLayout({

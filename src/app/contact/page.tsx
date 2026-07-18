@@ -4,8 +4,8 @@ import { PageHero } from "@/components/sections/page-hero";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Reveal } from "@/components/animations/reveal";
 import { Metadata } from "next";
-import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail } from "lucide-react";
+import { ContactForm } from "@/components/forms/contact-form";
 
 export const metadata: Metadata = {
   title: "Contact Us | Arohan Tech Solution",
@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -80,31 +81,10 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Contact Form Placeholder */}
+              {/* Contact Form */}
               <FadeIn delay={0.4}>
-                <div className="glass p-8 md:p-10 rounded-3xl border border-border/50 shadow-xl">
-                  <h3 className="text-2xl font-bold font-heading mb-6">Send a Message</h3>
-                  <form className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <div className="space-y-2">
-                        <label className="text-sm font-medium text-foreground">First Name</label>
-                        <input type="text" className="w-full h-12 px-4 rounded-xl bg-background border border-border focus:border-primary focus:outline-none transition-colors" placeholder="John" />
-                      </div>
-                      <div className="space-y-2">
-                        <label className="text-sm font-medium text-foreground">Last Name</label>
-                        <input type="text" className="w-full h-12 px-4 rounded-xl bg-background border border-border focus:border-primary focus:outline-none transition-colors" placeholder="Doe" />
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-foreground">Corporate Email</label>
-                      <input type="email" className="w-full h-12 px-4 rounded-xl bg-background border border-border focus:border-primary focus:outline-none transition-colors" placeholder="john@company.com" />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium text-foreground">How can we help?</label>
-                      <textarea className="w-full min-h-[120px] p-4 rounded-xl bg-background border border-border focus:border-primary focus:outline-none transition-colors resize-none" placeholder="Tell us about your project goals..." />
-                    </div>
-                    <Button className="w-full h-12 rounded-xl text-base font-medium">Submit Inquiry</Button>
-                  </form>
+                <div className="glass p-8 md:p-10 rounded-3xl border border-border/50 shadow-xl relative overflow-hidden">
+                  <ContactForm />
                 </div>
               </FadeIn>
 
