@@ -44,7 +44,7 @@ export function Navbar() {
             A
           </div>
           <span className="font-heading font-bold text-xl tracking-tight">
-            Agency
+            Arohan Tech Solution
           </span>
         </Link>
 

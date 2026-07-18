@@ -28,12 +28,12 @@ export function PlaceholderPage({ title, description }: PlaceholderProps) {
           {description || "We are currently crafting a premium digital experience for this section. Check back soon."}
         </p>
         
-        <Button asChild size="lg" className="rounded-full px-8">
-          <Link href="/">
+        <Link href="/" passHref legacyBehavior>
+          <Button size="lg" className="rounded-full px-8">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Return Home
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </div>
     </div>
   );

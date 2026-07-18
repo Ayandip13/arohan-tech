@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Premium Digital Agency | AI & Tech Solutions",
+  title: "Arohan Tech Solution | AI & Tech Solutions",
   description: "A luxury digital marketing agency expanding into software development, AI solutions, and technology consulting.",
 };
 

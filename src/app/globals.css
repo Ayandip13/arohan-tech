@@ -96,13 +96,13 @@
 
 .dark {
   /* Dark Mode Colors */
-  --background: hsl(240 10% 4%);
+  --background: hsl(240 12% 10%);
   --foreground: hsl(0 0% 98%);
   
-  --card: hsl(240 10% 6%);
+  --card: hsl(240 12% 13%);
   --card-foreground: hsl(0 0% 98%);
   
-  --popover: hsl(240 10% 6%);
+  --popover: hsl(240 12% 13%);
   --popover-foreground: hsl(0 0% 98%);
   
   --brand-primary: hsl(244 76% 50%);
@@ -127,12 +127,12 @@
   --warning: hsl(38 92% 50%);
   --error: hsl(0 62% 40%);
 
-  --border: hsl(240 5% 20%);
-  --input: hsl(240 5% 20%);
+  --border: hsl(240 5% 22%);
+  --input: hsl(240 5% 22%);
   --ring: hsl(244 76% 50%);
 
-  --glass: hsl(240 10% 4% / 0.6);
-  --glass-border: hsl(240 5% 20% / 0.5);
+  --glass: hsl(240 12% 10% / 0.6);
+  --glass-border: hsl(240 5% 22% / 0.5);
 }
 
 @layer base {

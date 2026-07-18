@@ -16,7 +16,7 @@ export function Footer() {
                 A
               </div>
               <span className="font-heading font-bold text-xl tracking-tight">
-                Agency
+                Arohan Tech Solution
               </span>
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
@@ -70,7 +70,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            &copy; {currentYear} Agency. All rights reserved.
+            &copy; {currentYear} Arohan Tech Solution. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</Link>
