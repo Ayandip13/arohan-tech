@@ -50,32 +50,32 @@
 
 :root {
   /* Light Mode Colors */
-  --background: hsl(0 0% 98%);
-  --foreground: hsl(240 10% 10%);
+  --background: hsl(220 14% 94%);
+  --foreground: hsl(220 20% 15%);
   
   --card: hsl(0 0% 100%);
-  --card-foreground: hsl(240 10% 10%);
+  --card-foreground: hsl(220 20% 15%);
   
   --popover: hsl(0 0% 100%);
-  --popover-foreground: hsl(240 10% 10%);
+  --popover-foreground: hsl(220 20% 15%);
   
-  /* Deep Indigo */
-  --brand-primary: hsl(244 76% 25%);
-  --primary: hsl(244 76% 25%);
+  /* Primary - Sophisticated Blue */
+  --brand-primary: hsl(220 70% 30%);
+  --primary: hsl(220 70% 30%);
   --primary-foreground: hsl(0 0% 100%);
   
-  /* Electric Cyan */
-  --brand-secondary: hsl(186 100% 42%);
-  --secondary: hsl(186 100% 42%);
-  --secondary-foreground: hsl(244 76% 25%);
+  /* Secondary - Cyan */
+  --brand-secondary: hsl(190 90% 40%);
+  --secondary: hsl(190 90% 40%);
+  --secondary-foreground: hsl(0 0% 100%);
   
-  /* Purple Accent */
-  --brand-accent: hsl(271 81% 56%);
-  --accent: hsl(271 81% 56%);
+  /* Accent */
+  --brand-accent: hsl(270 60% 50%);
+  --accent: hsl(270 60% 50%);
   --accent-foreground: hsl(0 0% 100%);
   
-  --muted: hsl(240 5% 90%);
-  --muted-foreground: hsl(240 5% 45%);
+  --muted: hsl(220 14% 88%);
+  --muted-foreground: hsl(220 10% 45%);
   
   --destructive: hsl(0 84% 60%);
   --destructive-foreground: hsl(0 0% 100%);
@@ -84,9 +84,9 @@
   --warning: hsl(38 92% 50%);
   --error: hsl(0 84% 60%);
   
-  --border: hsl(240 6% 90%);
-  --input: hsl(240 6% 90%);
-  --ring: hsl(244 76% 25%);
+  --border: hsl(220 14% 86%);
+  --input: hsl(220 14% 86%);
+  --ring: hsl(220 70% 30%);
   
   --radius: 0.75rem;
 
@@ -95,30 +95,31 @@
 }
 
 .dark {
-  /* Dark Mode Colors */
-  --background: hsl(240 12% 10%);
-  --foreground: hsl(0 0% 98%);
+  /* Dark Mode Colors - Slate instead of Black */
+  --background: hsl(220 15% 12%);
+  --foreground: hsl(220 10% 98%);
   
-  --card: hsl(240 12% 13%);
-  --card-foreground: hsl(0 0% 98%);
+  --card: hsl(220 15% 16%);
+  --card-foreground: hsl(220 10% 98%);
   
-  --popover: hsl(240 12% 13%);
-  --popover-foreground: hsl(0 0% 98%);
+  --popover: hsl(220 15% 16%);
+  --popover-foreground: hsl(220 10% 98%);
   
-  --brand-primary: hsl(244 76% 50%);
-  --primary: hsl(244 76% 50%);
-  --primary-foreground: hsl(0 0% 100%);
+  /* Soft Modern Blue */
+  --brand-primary: hsl(210 100% 60%);
+  --primary: hsl(210 100% 60%);
+  --primary-foreground: hsl(220 15% 12%);
   
-  --brand-secondary: hsl(186 100% 50%);
-  --secondary: hsl(186 100% 50%);
-  --secondary-foreground: hsl(240 10% 4%);
+  --brand-secondary: hsl(190 100% 50%);
+  --secondary: hsl(190 100% 50%);
+  --secondary-foreground: hsl(220 15% 12%);
   
-  --brand-accent: hsl(271 81% 65%);
-  --accent: hsl(271 81% 65%);
-  --accent-foreground: hsl(0 0% 100%);
+  --brand-accent: hsl(270 70% 65%);
+  --accent: hsl(270 70% 65%);
+  --accent-foreground: hsl(220 10% 98%);
   
-  --muted: hsl(240 5% 15%);
-  --muted-foreground: hsl(240 5% 65%);
+  --muted: hsl(220 15% 20%);
+  --muted-foreground: hsl(220 10% 65%);
   
   --destructive: hsl(0 62% 40%);
   --destructive-foreground: hsl(0 0% 98%);
@@ -127,12 +128,12 @@
   --warning: hsl(38 92% 50%);
   --error: hsl(0 62% 40%);
 
-  --border: hsl(240 5% 22%);
-  --input: hsl(240 5% 22%);
-  --ring: hsl(244 76% 50%);
+  --border: hsl(220 15% 22%);
+  --input: hsl(220 15% 22%);
+  --ring: hsl(210 100% 60%);
 
-  --glass: hsl(240 12% 10% / 0.6);
-  --glass-border: hsl(240 5% 22% / 0.5);
+  --glass: hsl(220 15% 12% / 0.6);
+  --glass-border: hsl(220 15% 22% / 0.5);
 }
 
 @layer base {
@@ -140,12 +141,30 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   html {
     @apply font-sans antialiased;
   }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-33.33%); }
+}
+
+@keyframes marquee-reverse {
+  0% { transform: translateX(-33.33%); }
+  100% { transform: translateX(0%); }
+}
+
+@utility animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@utility animate-marquee-reverse {
+  animation: marquee-reverse 40s linear infinite;
 }
 
 @utility glass {
