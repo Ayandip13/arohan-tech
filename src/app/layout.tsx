@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { siteConfig } from "@/config/site";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { SmoothScrollProvider } from "@/providers/smooth-scroll-provider";
 
@@ -15,20 +16,20 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Arohan Tech Solution | Digital Marketing & Tech Solutions",
-  description: "A luxury digital marketing agency expanding into software development, cloud infrastructure, and technology consulting.",
+  title: `${siteConfig.name} | Digital Marketing & Tech Solutions`,
+  description: siteConfig.description,
   openGraph: {
-    title: "Arohan Tech Solution",
-    description: "Premium digital marketing, software development, and cloud infrastructure.",
-    url: "https://arohantech.com",
-    siteName: "Arohan Tech Solution",
+    title: siteConfig.name,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Arohan Tech Solution",
-    description: "Premium digital marketing, software development, and cloud infrastructure.",
+    title: siteConfig.name,
+    description: siteConfig.description,
   },
 };
 

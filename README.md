@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Arohan Tech Solution
 
-## Getting Started
+![Arohan Tech Solution](https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop)
 
-First, run the development server:
+A premium, production-ready corporate platform for Arohan Tech Solution. This repository contains the frontend architecture, focusing on a luxury digital experience with exceptional performance, SEO, accessibility, and high-end micro-interactions.
+
+## 🚀 Tech Stack
+
+- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Motion & Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Scroll Effects**: [Lenis Smooth Scroll](https://github.com/darkroomengineering/lenis)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+
+## 📂 Folder Structure
+
+```
+src/
+├── app/                  # Next.js App Router (Pages, Layouts, SEO, Errors)
+│   ├── blog/             # Insights & Blog Engine
+│   ├── contact/          # Interactive Contact Forms
+│   ├── faq/              # Advanced FAQ & Search
+│   ├── work/             # Portfolio Case Studies
+│   ├── team/             # Leadership & Culture
+│   ├── careers/          # Job Board placeholders
+│   ├── privacy-policy/   # Legal pages
+│   └── ...
+├── components/           # UI and Layout Components
+│   ├── animations/       # Reusable Framer Motion wrappers (FadeIn, Reveal)
+│   ├── forms/            # Client-side interactive forms
+│   ├── layouts/          # Global layout parts (Navbar, Footer, Theme)
+│   ├── sections/         # Complex page sections (Hero, Features, Newsletter)
+│   └── ui/               # Atomic design UI elements (Buttons, Inputs, Modals)
+├── config/               # Global constants and site configuration
+├── lib/                  # Utility functions and API service placeholders
+└── providers/            # React context providers (Theme, Smooth Scroll)
+```
+
+## 🛠️ Getting Started
+
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔐 Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file in the root directory for future API integrations.
 
-## Learn More
+```env
+# Future API Integrations
+NEXT_PUBLIC_API_URL=https://api.arohantech.com
+NEXT_PUBLIC_CMS_ENDPOINT=
+NEXT_PUBLIC_ANALYTICS_ID=
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🏗️ Future Roadmap & Architecture
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This frontend is designed as a scalable foundation. Future backend integration targets include:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Authentication Structure**: Designed to support NextAuth.js or custom JWT workflows.
+- **Client/Employee Portals**: Layouts accommodate role-based routing.
+- **Headless CMS**: Blog and Projects are ready to be wired to Sanity, Contentful, or a custom API.
+- **API Client**: A centralized API service layer (`src/lib/api-client.ts`) handles request interception and response normalization.
 
-## Deploy on Vercel
+## 🎨 Design Philosophy & Coding Standards
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Strict TypeScript**: No `any` types. Interfaces and Types must be explicitly defined.
+2. **Server-First Components**: Components default to Server Components for SEO and performance. `"use client"` is reserved strictly for interactive leaves (forms, modals, heavy animations).
+3. **Motion Language**: `framer-motion` is utilized for entry animations (`FadeIn`, `Reveal`), utilizing spring physics for premium feel. Transitions must maintain 60FPS.
+4. **Accessibility**: All interactive elements must maintain clear focus states (`focus:ring-2`), semantic HTML tags (`<nav>`, `<article>`, `<aside>`), and sufficient contrast ratios.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+*Handcrafted by the Engineering Team.*
