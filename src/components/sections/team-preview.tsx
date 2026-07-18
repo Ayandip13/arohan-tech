@@ -9,7 +9,7 @@ const team = [
   { name: "Alex Mercer", role: "Chief Technology Officer" },
   { name: "Sophia Lin", role: "Head of Design" },
   { name: "James Carter", role: "Director of Marketing" },
-  { name: "Dr. Elena Rostova", role: "Lead AI Engineer" },
+  { name: "Dr. Elena Rostova", role: "Lead System Architect" },
 ];
 
 export function TeamPreview() {

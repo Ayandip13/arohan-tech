@@ -21,7 +21,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "Integrating their AI models into our customer service pipeline saved us countless hours and significantly improved our user satisfaction scores.",
+    quote: "Migrating our legacy infrastructure to their custom cloud architecture saved us countless hours and significantly improved our user satisfaction scores.",
     name: "Elena Rodriguez",
     role: "VP Operations, TechNova",
     rating: 5,

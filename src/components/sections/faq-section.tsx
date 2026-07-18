@@ -24,8 +24,8 @@ const faqs = [
     answer: "We offer flexible models depending on the engagement. For discrete projects, we provide fixed-price contracts. For ongoing marketing or development, we offer retainer agreements. We prioritize transparency and ROI."
   },
   {
-    question: "Can you integrate AI into our existing software?",
-    answer: "Absolutely. A significant part of our practice involves retrofitting legacy systems with modern AI capabilities, from intelligent chatbots to predictive analytics and workflow automation."
+    question: "Can you modernize our legacy systems?",
+    answer: "Absolutely. A significant part of our practice involves retrofitting legacy systems with modern architectures, from cloud migrations to API integrations and workflow automation."
   }
 ];
 

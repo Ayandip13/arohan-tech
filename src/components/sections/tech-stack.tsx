@@ -5,8 +5,8 @@ import { Reveal } from "@/components/animations/reveal";
 
 const technologies = [
   "React", "Next.js", "Node.js", "MongoDB", "PostgreSQL",
-  "AWS", "Docker", "Kubernetes", "Python", "TensorFlow",
-  "OpenAI", "Framer Motion", "Tailwind CSS", "TypeScript",
+  "AWS", "Docker", "Kubernetes", "Python", "Redis",
+  "GraphQL", "Framer Motion", "Tailwind CSS", "TypeScript",
   "Google Ads", "Meta Ads", "SEO", "HubSpot"
 ];
 

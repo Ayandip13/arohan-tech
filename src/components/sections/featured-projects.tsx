@@ -14,9 +14,9 @@ const projects = [
     color: "from-blue-500/20",
   },
   {
-    title: "Nexus AI Platform",
-    category: "AI Integration",
-    tech: "Python, OpenAI, React",
+    title: "Nexus Cloud Platform",
+    category: "Cloud Migration",
+    tech: "Python, AWS, React",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop",
     color: "from-purple-500/20",
   },

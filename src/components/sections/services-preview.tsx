@@ -18,9 +18,9 @@ const services = [
     span: "md:col-span-1 lg:col-span-1",
   },
   {
-    icon: <Bot className="w-6 h-6" />,
-    title: "AI Solutions",
-    description: "Integrate LLMs, machine learning models, and automated agents into your workflow.",
+    icon: <Cloud className="w-6 h-6" />,
+    title: "Cloud Infrastructure",
+    description: "Secure, scalable, and resilient cloud architectures tailored for modern enterprise needs.",
     span: "md:col-span-1 lg:col-span-1",
   },
   {
