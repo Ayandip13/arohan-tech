@@ -11,10 +11,10 @@ import { IndustriesSection } from "@/components/sections/industries-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { TeamPreview } from "@/components/sections/team-preview";
 import { TechStack } from "@/components/sections/tech-stack";
-import { MemeCornerSection } from "@/components/sections/meme-corner";
 import { InsightsSection } from "@/components/sections/insights-section";
 import { FAQSection } from "@/components/sections/faq-section";
 import { FinalCTA } from "@/components/sections/final-cta";
+import { MemePlaceholderCard } from "@/components/ui/meme-placeholder";
 
 export default function Home() {
   return (
@@ -25,16 +25,47 @@ export default function Home() {
         <HeroSection />
         <TrustedBy />
         <ServicesPreview />
+
+        {/* Interstitial Meme Placeholder 1 */}
+        <MemePlaceholderCard 
+          title="Client: 'Can we make the logo bigger & add 15 more popups?'"
+          caption="Our UI team taking a deep breath before saving the conversion rate... ☕"
+          variant="rose"
+        />
+
         <WhyChooseUs />
         <OurProcess />
         <FeaturedProjects />
+
+        {/* Interstitial Meme Placeholder 2 */}
+        <MemePlaceholderCard 
+          title="When the Meta Ads algorithm hits a 4.2x ROAS on day 1"
+          caption="The growth squad celebrating in Slack like we just won a Championship 🏆"
+          variant="amber"
+        />
+
         <StatsSection />
         <IndustriesSection />
         <TestimonialsSection />
+
+        {/* Interstitial Meme Placeholder 3 */}
+        <MemePlaceholderCard 
+          title="Copywriter vs Designer debating font sizes for 45 minutes"
+          caption="Both agreeing that 'Inter' is superior anyway... 🎨"
+          variant="purple"
+        />
+
         <TeamPreview />
-        <MemeCornerSection />
         <TechStack />
         <InsightsSection />
+
+        {/* Interstitial Meme Placeholder 4 */}
+        <MemePlaceholderCard 
+          title="Marketing Lead reading competitor's ad copy in 2026"
+          caption="Writing a viral counter-hook in 30 seconds... 🚀"
+          variant="emerald"
+        />
+
         <FAQSection />
         <FinalCTA />
       </main>

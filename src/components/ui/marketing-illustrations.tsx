@@ -3,49 +3,35 @@
 import React from "react";
 
 // Digital Marketing Hero Vector Illustration
-export function MarketingHeroIllustration({ className = "w-full h-auto max-w-md" }: { className?: string }) {
+export function MarketingHeroIllustration({ className = "w-full h-auto max-w-xs" }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Background blobs & organic shapes */}
-      <circle cx="250" cy="200" r="170" fill="url(#hero-grad-1)" opacity="0.2" />
-      <path d="M120 100 Q 250 40 380 120 T 420 300 Q 280 380 140 320 Z" fill="url(#hero-grad-2)" opacity="0.15" />
+    <svg className={className} viewBox="0 0 500 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="180" r="140" fill="url(#hero-grad-1)" opacity="0.2" />
+      <path d="M120 80 Q 250 30 380 100 T 420 280 Q 280 340 140 290 Z" fill="url(#hero-grad-2)" opacity="0.15" />
       
-      {/* Central Megaphone / Rocket Blast */}
-      <g transform="translate(140, 90)">
-        {/* Rocket / Speaker body */}
+      {/* Central Megaphone / Growth Blast */}
+      <g transform="translate(140, 70)">
         <path d="M70 120 L160 70 L160 170 Z" fill="#f43f5e" />
         <rect x="50" y="95" width="40" height="50" rx="8" fill="#fbbf24" />
-        <circle cx="160" cy="120" r="50" fill="#ec4899" opacity="0.8" />
-        <circle cx="160" cy="120" r="30" fill="#8b5cf6" />
-        {/* Sound/Growth waves */}
-        <path d="M220 80 A 60 60 0 0 1 220 160" stroke="#fbbf24" strokeWidth="10" strokeLinecap="round" />
-        <path d="M250 60 A 90 90 0 0 1 250 180" stroke="#f43f5e" strokeWidth="10" strokeLinecap="round" />
-        <path d="M280 40 A 120 120 0 0 1 280 200" stroke="#10b981" strokeWidth="10" strokeLinecap="round" />
+        <circle cx="160" cy="120" r="45" fill="#ec4899" opacity="0.85" />
+        <circle cx="160" cy="120" r="26" fill="#8b5cf6" />
+        <path d="M210 85 A 50 50 0 0 1 210 155" stroke="#fbbf24" strokeWidth="8" strokeLinecap="round" />
+        <path d="M235 65 A 75 75 0 0 1 235 175" stroke="#f43f5e" strokeWidth="8" strokeLinecap="round" />
       </g>
 
-      {/* Floating Marketing Stickers / Cards */}
-      {/* Social Media Badge */}
-      <g transform="translate(50, 70)">
-        <rect width="110" height="60" rx="16" fill="#0f172a" stroke="#f43f5e" strokeWidth="3" />
-        <circle cx="30" cy="30" r="14" fill="#f43f5e" />
-        <text x="54" y="34" fill="#ffffff" fontSize="12" fontWeight="bold">#VIRAL</text>
+      {/* Floating Badges */}
+      <g transform="translate(40, 50)">
+        <rect width="100" height="50" rx="14" fill="#0f172a" stroke="#f43f5e" strokeWidth="2.5" />
+        <circle cx="25" cy="25" r="10" fill="#f43f5e" />
+        <text x="44" y="29" fill="#ffffff" fontSize="11" fontWeight="bold">#VIRAL</text>
       </g>
 
-      {/* ROI Boost Badge */}
-      <g transform="translate(320, 260)">
-        <rect width="130" height="70" rx="20" fill="#fbbf24" stroke="#0f172a" strokeWidth="4" />
-        <text x="20" y="35" fill="#0f172a" fontSize="16" fontWeight="900">+420%</text>
-        <text x="20" y="54" fill="#0f172a" fontSize="10" fontWeight="bold">REVENUE LIFT 📈</text>
+      <g transform="translate(340, 230)">
+        <rect width="120" height="60" rx="16" fill="#fbbf24" stroke="#0f172a" strokeWidth="3" />
+        <text x="18" y="30" fill="#0f172a" fontSize="14" fontWeight="900">+420%</text>
+        <text x="18" y="46" fill="#0f172a" fontSize="9" fontWeight="bold">ROAS LIFT 📈</text>
       </g>
 
-      {/* Target Cursor Icon */}
-      <g transform="translate(80, 260)">
-        <circle cx="35" cy="35" r="30" fill="#10b981" opacity="0.9" />
-        <circle cx="35" cy="35" r="15" fill="#ffffff" />
-        <circle cx="35" cy="35" r="6" fill="#10b981" />
-      </g>
-
-      {/* Gradient Definitions */}
       <defs>
         <linearGradient id="hero-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stopColor="#f43f5e" />
@@ -60,20 +46,27 @@ export function MarketingHeroIllustration({ className = "w-full h-auto max-w-md"
   );
 }
 
-// Brand & Design Vector Illustration
+// Brand Strategy & Design Vector Illustration
 export function BrandingIllustration({ className = "w-full h-auto max-w-xs" }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="300" height="240" rx="24" fill="#0f172a" opacity="0.05" />
-      {/* Color Palette Swatches */}
-      <circle cx="70" cy="80" r="35" fill="#f43f5e" />
-      <circle cx="130" cy="70" r="40" fill="#fbbf24" />
-      <circle cx="200" cy="90" r="30" fill="#8b5cf6" />
-      <circle cx="240" cy="140" r="25" fill="#10b981" />
-      {/* Pen Tool / Canvas */}
-      <path d="M60 180 L180 120 L220 160 L100 220 Z" fill="#ec4899" />
-      <path d="M180 120 L210 90 L240 120 L210 150 Z" fill="#fbbf24" />
-      <circle cx="210" cy="90" r="8" fill="#ffffff" />
+    <svg className={className} viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="320" height="220" rx="20" fill="url(#brand-bg)" opacity="0.1" />
+      <circle cx="80" cy="75" r="32" fill="#f43f5e" />
+      <circle cx="140" cy="65" r="38" fill="#fbbf24" />
+      <circle cx="210" cy="85" r="28" fill="#8b5cf6" />
+      <circle cx="250" cy="135" r="22" fill="#10b981" />
+      
+      {/* Designer Stylus & Canvas */}
+      <path d="M50 165 L170 110 L210 150 L90 205 Z" fill="#ec4899" />
+      <path d="M170 110 L200 80 L230 110 L200 140 Z" fill="#fbbf24" />
+      <circle cx="200" cy="80" r="7" fill="#ffffff" />
+
+      <defs>
+        <linearGradient id="brand-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#f43f5e" />
+          <stop offset="100%" stopColor="#ec4899" />
+        </linearGradient>
+      </defs>
     </svg>
   );
 }
@@ -81,54 +74,64 @@ export function BrandingIllustration({ className = "w-full h-auto max-w-xs" }: {
 // Social Media & Growth Vector Illustration
 export function SocialMediaIllustration({ className = "w-full h-auto max-w-xs" }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Floating Chat Bubbles */}
-      <rect x="30" y="40" width="160" height="80" rx="20" fill="#f43f5e" />
-      <path d="M60 120 L40 140 L80 120 Z" fill="#f43f5e" />
-      <text x="50" y="85" fill="#ffffff" fontSize="18" fontWeight="bold">🔥 GO VIRAL</text>
+    <svg className={className} viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="25" y="30" width="150" height="70" rx="18" fill="#f43f5e" />
+      <path d="M55 100 L38 118 L72 100 Z" fill="#f43f5e" />
+      <text x="42" y="70" fill="#ffffff" fontSize="15" fontWeight="bold">🔥 GO VIRAL</text>
 
-      <rect x="120" y="120" width="150" height="80" rx="20" fill="#fbbf24" />
-      <path d="M230 120 L250 100 L210 120 Z" fill="#fbbf24" />
-      <text x="140" y="165" fill="#0f172a" fontSize="16" fontWeight="900">10M+ VIEWS</text>
+      <rect x="130" y="110" width="150" height="70" rx="18" fill="#fbbf24" />
+      <path d="M230 110 L248 92 L212 110 Z" fill="#fbbf24" />
+      <text x="146" y="150" fill="#0f172a" fontSize="14" fontWeight="900">10M+ REACH</text>
 
-      {/* Heart & Like Badges */}
-      <circle cx="240" cy="50" r="22" fill="#ec4899" />
-      <path d="M230 48 C230 42 240 40 240 46 C240 40 250 42 250 48 C250 54 240 60 240 60 C240 60 230 54 230 48 Z" fill="#ffffff" />
+      <circle cx="250" cy="45" r="20" fill="#ec4899" />
+      <path d="M241 43 C241 38 250 36 250 41 C250 36 259 38 259 43 C259 48 250 53 250 53 C250 53 241 48 241 43 Z" fill="#ffffff" />
     </svg>
   );
 }
 
-// Video & Content Creation Vector Illustration
+// Video Studio & Production Vector Illustration
 export function ContentCreationIllustration({ className = "w-full h-auto max-w-xs" }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Video Clapper Board */}
-      <rect x="40" y="60" width="220" height="140" rx="20" fill="#0f172a" />
-      <polygon points="120,100 120,160 180,130" fill="#f43f5e" />
-      {/* Top Strip */}
-      <rect x="40" y="40" width="220" height="30" rx="8" fill="#fbbf24" />
-      <path d="M70 40 L90 70 M130 40 L150 70 M190 40 L210 70" stroke="#0f172a" strokeWidth="4" />
-      {/* Sparkles */}
-      <circle cx="260" cy="30" r="12" fill="#10b981" />
-      <circle cx="30" cy="180" r="16" fill="#8b5cf6" />
+    <svg className={className} viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="45" y="55" width="230" height="130" rx="18" fill="#0f172a" />
+      <polygon points="130,95 130,145 185,120" fill="#f43f5e" />
+      <rect x="45" y="35" width="230" height="25" rx="6" fill="#fbbf24" />
+      <path d="M75 35 L95 60 M135 35 L155 60 M195 35 L215 60" stroke="#0f172a" strokeWidth="3.5" />
+      <circle cx="275" cy="25" r="10" fill="#10b981" />
+      <circle cx="30" cy="165" r="14" fill="#8b5cf6" />
     </svg>
   );
 }
 
-// Creative Brainstorming & Strategy Vector Illustration
+// Creative Strategy & Brainstorming Vector Illustration
 export function BrainstormingIllustration({ className = "w-full h-auto max-w-xs" }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {/* Lightbulb glowing */}
-      <circle cx="150" cy="110" r="60" fill="#fbbf24" opacity="0.3" />
-      <path d="M120 110 C120 80 180 80 180 110 C180 130 165 140 165 155 L135 155 C135 140 120 130 120 110 Z" fill="#fbbf24" stroke="#0f172a" strokeWidth="4" />
-      <rect x="137" y="160" width="26" height="15" rx="4" fill="#0f172a" />
-      {/* Energy rays */}
-      <line x1="150" y1="30" x2="150" y2="10" stroke="#f43f5e" strokeWidth="5" strokeLinecap="round" />
-      <line x1="70" y1="110" x2="50" y2="110" stroke="#f43f5e" strokeWidth="5" strokeLinecap="round" />
-      <line x1="230" y1="110" x2="250" y2="110" stroke="#f43f5e" strokeWidth="5" strokeLinecap="round" />
-      <line x1="90" y1="50" x2="75" y2="35" stroke="#8b5cf6" strokeWidth="5" strokeLinecap="round" />
-      <line x1="210" y1="50" x2="225" y2="35" stroke="#8b5cf6" strokeWidth="5" strokeLinecap="round" />
+    <svg className={className} viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="160" cy="100" r="55" fill="#fbbf24" opacity="0.25" />
+      <path d="M130 100 C130 75 190 75 190 100 C190 118 175 128 175 142 L145 142 C145 128 130 118 130 100 Z" fill="#fbbf24" stroke="#0f172a" strokeWidth="3.5" />
+      <rect x="147" y="146" width="26" height="14" rx="3" fill="#0f172a" />
+      <line x1="160" y1="30" x2="160" y2="12" stroke="#f43f5e" strokeWidth="4.5" strokeLinecap="round" />
+      <line x1="85" y1="100" x2="67" y2="100" stroke="#f43f5e" strokeWidth="4.5" strokeLinecap="round" />
+      <line x1="235" y1="100" x2="253" y2="100" stroke="#f43f5e" strokeWidth="4.5" strokeLinecap="round" />
+      <line x1="105" y1="45" x2="92" y2="32" stroke="#8b5cf6" strokeWidth="4.5" strokeLinecap="round" />
+      <line x1="215" y1="45" x2="228" y2="32" stroke="#8b5cf6" strokeWidth="4.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+// Performance Growth & Analytics Vector Illustration
+export function GrowthAnalyticsIllustration({ className = "w-full h-auto max-w-xs" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="30" y="30" width="260" height="160" rx="20" fill="#0f172a" opacity="0.06" />
+      {/* Growth Trend Line */}
+      <path d="M50 150 Q 110 140 150 90 T 270 40" stroke="#f43f5e" strokeWidth="6" strokeLinecap="round" fill="none" />
+      {/* Bars */}
+      <rect x="60" y="120" width="24" height="40" rx="6" fill="#8b5cf6" opacity="0.7" />
+      <rect x="110" y="100" width="24" height="60" rx="6" fill="#ec4899" opacity="0.8" />
+      <rect x="160" y="70" width="24" height="90" rx="6" fill="#fbbf24" />
+      <rect x="210" y="45" width="24" height="115" rx="6" fill="#10b981" />
+      <circle cx="270" cy="40" r="10" fill="#f43f5e" />
     </svg>
   );
 }
