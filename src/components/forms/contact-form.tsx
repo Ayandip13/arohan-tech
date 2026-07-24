@@ -6,7 +6,7 @@ import { CheckCircle, AlertCircle, Send, Sparkles } from "lucide-react";
 
 export function ContactForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [formData, setFormData] = useState({ firstName: "", lastName: "", email: "", message: "", service: "Digital Marketing & PPC" });
+  const [formData, setFormData] = useState({ firstName: "", lastName: "", email: "", message: "", service: "Digital Marketing & Performance Ads" });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ export function ContactForm() {
 
     setTimeout(() => {
       setStatus("success");
-      setFormData({ firstName: "", lastName: "", email: "", message: "", service: "Digital Marketing & PPC" });
+      setFormData({ firstName: "", lastName: "", email: "", message: "", service: "Digital Marketing & Performance Ads" });
     }, 1500);
   };
 
@@ -97,8 +97,8 @@ export function ContactForm() {
           >
             <option>Digital Marketing & Performance Ads</option>
             <option>Brand Strategy & Design System</option>
-            <option>Full-Stack Software Development</option>
-            <option>AI Solutions & Workflow Automation</option>
+            <option>Full-Stack Web Development</option>
+            <option>SEO & Social Media Marketing</option>
             <option>Mobile App Development</option>
           </select>
         </div>

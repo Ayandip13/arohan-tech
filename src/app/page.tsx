@@ -11,6 +11,7 @@ import { IndustriesSection } from "@/components/sections/industries-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 import { TeamPreview } from "@/components/sections/team-preview";
 import { TechStack } from "@/components/sections/tech-stack";
+import { MemeCornerSection } from "@/components/sections/meme-corner";
 import { InsightsSection } from "@/components/sections/insights-section";
 import { FAQSection } from "@/components/sections/faq-section";
 import { FinalCTA } from "@/components/sections/final-cta";
@@ -31,6 +32,7 @@ export default function Home() {
         <IndustriesSection />
         <TestimonialsSection />
         <TeamPreview />
+        <MemeCornerSection />
         <TechStack />
         <InsightsSection />
         <FAQSection />

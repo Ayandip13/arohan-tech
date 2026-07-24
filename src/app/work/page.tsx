@@ -5,11 +5,11 @@ import { FadeIn } from "@/components/animations/fade-in";
 import { FinalCTA } from "@/components/sections/final-cta";
 import { Metadata } from "next";
 import Image from "next/image";
-import { ArrowUpRight, Calendar, Tag, Trophy, Flame } from "lucide-react";
+import { ArrowUpRight, Tag } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Featured Case Studies & Work | Arohan Tech Solution",
-  description: "Explore our portfolio of high-converting digital marketing campaigns, brand identity designs, and scalable software platforms.",
+  title: "Featured Case Studies & Work | Arohan Creative Marketing Agency",
+  description: "Explore our portfolio of high-converting digital marketing campaigns, brand identity designs, and scalable web platforms.",
 };
 
 const projects = [
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: "Aura FinTech Ecosystem",
-    category: "Software Engineering",
+    category: "Web Engineering & Design",
     industry: "FinTech",
     tech: "Next.js, Node.js, Postgres",
     metric: "$12M Capital Raised",
@@ -34,13 +34,13 @@ const projects = [
     image: "https://images.unsplash.com/photo-1616077168079-7e09a6a2609a?q=80&w=1000&auto=format&fit=crop",
   },
   {
-    title: "Nexus Cloud AI Engine",
-    category: "AI & Cloud Architecture",
-    industry: "Enterprise",
-    tech: "Python LLMs, AWS, React",
-    metric: "2.4M Daily API Hits",
-    timeline: "8 Months",
-    desc: "Built custom AI workflow automation for enterprise cloud operations, cutting manual task hours by 70%.",
+    title: "Pulse Omnichannel Growth Launch",
+    category: "Performance Marketing & Ads",
+    industry: "Consumer Brand",
+    tech: "Meta Ads, Google PPC, Content Strategy",
+    metric: "2.4M Campaign Reach",
+    timeline: "4 Months",
+    desc: "Multichannel viral advertising campaign driving 2.4M target audience impressions and high conversion lift.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop",
   },
   {
@@ -55,12 +55,12 @@ const projects = [
   },
   {
     title: "EcoLogistics Fleet Dashboard",
-    category: "Custom Software",
+    category: "Custom Web Application",
     industry: "Logistics",
     tech: "React, Python, Mapbox",
     metric: "-25% Fuel Cost",
     timeline: "4 Months",
-    desc: "Real-time AI fleet route optimization system for sustainable delivery vehicles.",
+    desc: "Real-time logistics platform and brand redesign for sustainable delivery vehicle fleet.",
     image: "https://images.unsplash.com/photo-1586528116311-ad8ed7c80a30?q=80&w=1000&auto=format&fit=crop",
   },
   {
@@ -83,51 +83,51 @@ export default function WorkPage() {
       <main className="flex-1">
         <PageHero 
           title="Featured Growth Case Studies"
-          description="Explore how our creative marketing strategies, brand design, and custom software delivered massive ROI for ambitious brands."
+          description="Explore how our creative marketing strategies, brand design, and custom web platforms delivered massive ROI for ambitious brands."
           badge="Our Portfolio"
           breadcrumbs={[{ label: "Work", href: "/work" }]}
         />
 
-        <section className="py-24 bg-background">
+        <section className="py-20 bg-background">
           <div className="container mx-auto px-4 md:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-14">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
               {projects.map((project, idx) => (
-                <FadeIn key={idx} delay={0.1}>
-                  <div className="group rounded-3xl p-6 bg-card border-2 border-border/80 hover:border-rose-500/50 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col justify-between h-full">
+                <FadeIn key={idx} delay={0.08 * idx}>
+                  <div className="group rounded-3xl p-5 bg-card border-2 border-border/80 hover:border-rose-500/50 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col justify-between h-full">
                     <div>
-                      <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl mb-6 bg-muted">
+                      <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl mb-5 bg-muted">
                         <Image 
                           src={project.image} 
                           alt={project.title}
                           fill
-                          className="object-cover transition-transform duration-700 group-hover:scale-105"
+                          className="object-cover transition-transform duration-500 group-hover:scale-105"
                         />
-                        <div className="absolute top-4 left-4 z-10">
-                          <span className="px-3.5 py-1.5 rounded-full text-xs font-black uppercase tracking-wider bg-rose-500 text-white shadow-lg">
+                        <div className="absolute top-3.5 left-3.5 z-10">
+                          <span className="px-3 py-1 rounded-full text-[11px] font-black uppercase tracking-wider bg-rose-500 text-white shadow-md">
                             {project.metric}
                           </span>
                         </div>
                       </div>
                       
-                      <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-wider text-rose-500 mb-3">
-                        <span className="flex items-center gap-1"><Tag className="w-3.5 h-3.5" /> {project.category}</span>
+                      <div className="flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-wider text-rose-500 mb-2">
+                        <span className="flex items-center gap-1"><Tag className="w-3 h-3" /> {project.category}</span>
                         <span>•</span>
                         <span className="text-muted-foreground font-semibold">{project.industry}</span>
                       </div>
                       
-                      <h3 className="text-2xl md:text-3xl font-heading font-black text-foreground mb-3 group-hover:text-rose-500 transition-colors leading-tight">
+                      <h3 className="text-xl md:text-2xl font-heading font-black text-foreground mb-2 group-hover:text-rose-500 transition-colors leading-tight">
                         {project.title}
                       </h3>
                       
-                      <p className="text-muted-foreground text-base leading-relaxed font-normal mb-6">
+                      <p className="text-muted-foreground text-xs md:text-sm leading-relaxed font-normal mb-5">
                         {project.desc}
                       </p>
                     </div>
 
-                    <div className="pt-4 border-t border-border/60 flex items-center justify-between font-bold text-sm text-foreground group-hover:text-rose-500 transition-colors">
-                      <span className="text-xs text-muted-foreground font-mono">Tech: {project.tech}</span>
-                      <div className="w-9 h-9 rounded-full bg-rose-500/10 text-rose-500 flex items-center justify-center group-hover:bg-rose-500 group-hover:text-white transition-all">
-                        <ArrowUpRight className="w-5 h-5" />
+                    <div className="pt-3.5 border-t border-border/60 flex items-center justify-between font-bold text-xs text-foreground group-hover:text-rose-500 transition-colors">
+                      <span className="text-[11px] text-muted-foreground font-mono">Tools: {project.tech}</span>
+                      <div className="w-8 h-8 rounded-full bg-rose-500/10 text-rose-500 flex items-center justify-center group-hover:bg-rose-500 group-hover:text-white transition-all">
+                        <ArrowUpRight className="w-4 h-4" />
                       </div>
                     </div>
                   </div>

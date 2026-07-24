@@ -2,7 +2,7 @@
 
 import { FadeIn } from "@/components/animations/fade-in";
 import { Reveal } from "@/components/animations/reveal";
-import { Star, Quote, Heart, Sparkles, MessageSquare } from "lucide-react";
+import { Star, Quote, MessageSquare } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 
@@ -17,7 +17,7 @@ const testimonials = [
     color: "from-rose-500/10 to-amber-500/10",
   },
   {
-    quote: "The combination of high-converting creative ad campaigns and custom AI software built by Arohan cut our customer acquisition costs by half.",
+    quote: "The combination of high-converting creative ad campaigns and high-speed web platforms built by Arohan cut our customer acquisition costs by half.",
     name: "Marcus Thorne",
     role: "Founder, Elevate Commerce",
     impact: "50% CAC Reduction",
@@ -56,20 +56,20 @@ export function TestimonialsSection() {
   }, []);
 
   return (
-    <section className="py-32 bg-card/40 overflow-hidden relative">
+    <section className="py-24 bg-card/40 overflow-hidden relative">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 left-0 w-[500px] h-[500px] bg-rose-500/10 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/3 left-0 w-[450px] h-[450px] bg-rose-500/10 rounded-full blur-[160px] pointer-events-none" />
 
-      <div className="container mx-auto px-4 md:px-8 mb-16">
+      <div className="container mx-auto px-4 md:px-8 mb-12">
         <FadeIn>
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs uppercase tracking-widest mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs uppercase tracking-widest mb-3">
             <MessageSquare className="w-4 h-4" />
             <span>Love From Our Partners</span>
           </div>
         </FadeIn>
 
         <Reveal>
-          <h2 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-tight">
+          <h2 className="text-3xl md:text-5xl font-heading font-black tracking-tight leading-tight">
             What Founders & CMOs Say <span className="gradient-text-coral-amber">About Us.</span>
           </h2>
         </Reveal>
@@ -80,40 +80,40 @@ export function TestimonialsSection() {
           <motion.div 
             drag="x" 
             dragConstraints={{ right: 0, left: -width }} 
-            className="flex gap-6 md:gap-8 w-max pb-6"
+            className="flex gap-5 md:gap-6 w-max pb-6"
           >
             {testimonials.map((t, idx) => (
               <motion.div 
                 key={idx}
-                className="w-[360px] md:w-[460px] p-8 md:p-10 rounded-3xl bg-background border-2 border-border/80 hover:border-rose-500/50 shadow-xl flex-shrink-0 flex flex-col justify-between"
-                whileHover={{ y: -6 }}
-                transition={{ duration: 0.3 }}
+                className="w-[320px] md:w-[400px] p-6 md:p-7 rounded-3xl bg-background border-2 border-border/80 hover:border-rose-500/50 shadow-lg flex-shrink-0 flex flex-col justify-between"
+                whileHover={{ y: -4 }}
+                transition={{ duration: 0.2 }}
               >
                 <div>
-                  <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center justify-between mb-4">
                     <div className="flex gap-1 text-amber-400">
                       {[...Array(t.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 fill-amber-400" />
+                        <Star key={i} className="w-4 h-4 fill-amber-400" />
                       ))}
                     </div>
 
-                    <span className="px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-rose-500/10 text-rose-500">
+                    <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-rose-500/10 text-rose-500">
                       {t.impact}
                     </span>
                   </div>
                   
-                  <Quote className="w-8 h-8 text-rose-500/30 mb-4" />
+                  <Quote className="w-6 h-6 text-rose-500/30 mb-3" />
                   
-                  <p className="text-base md:text-lg text-foreground mb-8 leading-relaxed font-medium">
+                  <p className="text-sm md:text-base text-foreground mb-6 leading-relaxed font-medium">
                     "{t.quote}"
                   </p>
                 </div>
                 
-                <div className="flex items-center gap-4 pt-6 border-t border-border/60">
-                  <img src={t.avatar} alt={t.name} className="w-12 h-12 rounded-full object-cover border-2 border-rose-500/30 shadow-md" />
+                <div className="flex items-center gap-3 pt-4 border-t border-border/60">
+                  <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover border-2 border-rose-500/30 shadow-md" />
                   <div>
-                    <h4 className="font-extrabold font-heading text-foreground">{t.name}</h4>
-                    <p className="text-xs font-semibold text-muted-foreground">{t.role}</p>
+                    <h4 className="font-extrabold font-heading text-sm text-foreground">{t.name}</h4>
+                    <p className="text-[11px] font-semibold text-muted-foreground">{t.role}</p>
                   </div>
                 </div>
               </motion.div>

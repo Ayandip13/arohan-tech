@@ -2,7 +2,7 @@
 
 import { FadeIn } from "@/components/animations/fade-in";
 import { Reveal } from "@/components/animations/reveal";
-import { ArrowUpRight, Clock, Sparkles, BookOpen } from "lucide-react";
+import { ArrowUpRight, Clock, BookOpen } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -17,8 +17,8 @@ const articles = [
     tagBg: "bg-rose-500 text-white",
   },
   {
-    title: "The 2026 AI Playbook: Building Custom Agents For Marketing",
-    category: "AI & Automation",
+    title: "The 2026 Growth Playbook: Multichannel Meta & Google Ad Funnels",
+    category: "Performance Ads",
     readTime: "7 min read",
     image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop",
     date: "Jul 12, 2026",
@@ -36,32 +36,32 @@ const articles = [
 
 export function InsightsSection() {
   return (
-    <section className="py-32 bg-background relative overflow-hidden" id="blog">
+    <section className="py-24 bg-background relative overflow-hidden" id="blog">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 left-10 w-[500px] h-[500px] bg-rose-500/10 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/3 left-10 w-[450px] h-[450px] bg-rose-500/10 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-2xl">
             <FadeIn>
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs uppercase tracking-widest mb-4">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs uppercase tracking-widest mb-3">
                 <BookOpen className="w-4 h-4" />
                 <span>Growth Digest & Insights</span>
               </div>
             </FadeIn>
 
             <Reveal>
-              <h2 className="text-4xl md:text-6xl font-heading font-black tracking-tight leading-tight">
+              <h2 className="text-3xl md:text-5xl font-heading font-black tracking-tight leading-tight">
                 Ideas & Strategies To <span className="gradient-text-coral-amber">Outpace Competition.</span>
               </h2>
             </Reveal>
           </div>
 
-          <FadeIn delay={0.3}>
+          <FadeIn delay={0.2}>
             <Link href="/blog">
-              <Button variant="outline" size="lg" className="rounded-full border-2 border-foreground/20 hover:border-rose-500">
+              <Button variant="outline" size="default" className="rounded-full border-2 border-foreground/20 hover:border-rose-500 font-extrabold">
                 <span>Read All Insights</span>
                 <ArrowUpRight className="w-4 h-4 ml-1" />
               </Button>
@@ -69,46 +69,46 @@ export function InsightsSection() {
           </FadeIn>
         </div>
 
-        {/* 3 Editorial Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* 3 Editorial Cards Grid - Compact sizing */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {articles.map((article, idx) => (
-            <FadeIn key={idx} delay={0.15 * idx}>
+            <FadeIn key={idx} delay={0.1 * idx}>
               <Link href="/blog">
-                <div className="group rounded-3xl p-6 bg-card border-2 border-border/80 hover:border-rose-500/50 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between h-full">
+                <div className="group rounded-3xl p-5 bg-card border-2 border-border/80 hover:border-rose-500/50 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full">
                   
                   <div>
                     {/* Image Container */}
-                    <div className="relative aspect-[16/10] overflow-hidden rounded-2xl mb-6 bg-muted">
+                    <div className="relative aspect-[16/10] overflow-hidden rounded-2xl mb-4 bg-muted">
                       <Image 
                         src={article.image}
                         alt={article.title}
                         fill
-                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
-                      <div className="absolute top-4 left-4 z-10">
-                        <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider ${article.tagBg}`}>
+                      <div className="absolute top-3 left-3 z-10">
+                        <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider ${article.tagBg}`}>
                           {article.category}
                         </span>
                       </div>
                     </div>
                     
                     {/* Meta Bar */}
-                    <div className="flex items-center gap-3 text-xs font-semibold text-muted-foreground mb-3">
+                    <div className="flex items-center gap-2.5 text-xs font-semibold text-muted-foreground mb-2">
                       <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5 text-rose-500" /> {article.readTime}</span>
                       <span>•</span>
                       <span>{article.date}</span>
                     </div>
                     
                     {/* Title */}
-                    <h3 className="text-xl md:text-2xl font-heading font-black text-foreground mb-4 group-hover:text-rose-500 transition-colors leading-tight">
+                    <h3 className="text-lg font-heading font-black text-foreground mb-3 group-hover:text-rose-500 transition-colors leading-snug">
                       {article.title}
                     </h3>
                   </div>
 
                   {/* Read Article Link */}
-                  <div className="pt-4 border-t border-border/60 flex items-center justify-between font-bold text-sm text-foreground group-hover:text-rose-500 transition-colors">
+                  <div className="pt-3 border-t border-border/60 flex items-center justify-between font-bold text-xs text-foreground group-hover:text-rose-500 transition-colors">
                     <span>Read Article</span>
-                    <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </div>
 
                 </div>
