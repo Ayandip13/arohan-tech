@@ -1,11 +1,11 @@
 "use client";
 
-import { ArrowRight, TrendingUp, Star, Megaphone } from "lucide-react";
+import { ArrowRight, Star, Megaphone } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Reveal } from "@/components/animations/reveal";
 import { MagneticButton } from "@/components/animations/magnetic-button";
 import { HandDrawnArrow, FunkySticker, DoodleStar } from "@/components/ui/funky-elements";
-import { MarketingHeroIllustration } from "@/components/ui/marketing-illustrations";
+import { FunkyHeroCartoon } from "@/components/ui/funky-hero-cartoon";
 import Link from "next/link";
 
 export function HeroSection() {
@@ -31,7 +31,7 @@ export function HeroSection() {
             
             <FadeIn delay={0.1}>
               <div className="flex flex-wrap items-center gap-3">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs tracking-wider uppercase border border-rose-500/20">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs uppercase tracking-widest border border-rose-500/20">
                   <Megaphone className="w-3.5 h-3.5 text-rose-500" />
                   <span>Creative Digital Marketing Agency</span>
                 </div>
@@ -106,47 +106,10 @@ export function HeroSection() {
             </FadeIn>
           </div>
 
-          {/* Right Dashboard Card (Compact, Lightweight 5-col / max-w-sm) */}
+          {/* Right Column: Funky Cartoon Avatar Visual (5-col) */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <FadeIn delay={0.3}>
-              <div className="relative w-full max-w-sm rounded-3xl p-5 bg-card/90 backdrop-blur-xl border border-border/80 shadow-xl overflow-hidden">
-                
-                {/* Header */}
-                <div className="flex items-center justify-between mb-4 pb-3 border-b border-border/60">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-xl bg-gradient-to-r from-rose-500 to-amber-500 flex items-center justify-center text-white shadow-sm">
-                      <TrendingUp className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <h4 className="font-heading font-extrabold text-xs text-foreground">Growth Dashboard</h4>
-                      <span className="text-[10px] uppercase tracking-wider text-emerald-500 font-bold flex items-center gap-1">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping" /> Active Campaign
-                      </span>
-                    </div>
-                  </div>
-                  <span className="px-2 py-0.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-[11px]">
-                    +420% ROAS
-                  </span>
-                </div>
-
-                {/* SVG Vector Artwork */}
-                <div className="my-2 flex justify-center">
-                  <MarketingHeroIllustration className="w-full h-auto max-h-[180px]" />
-                </div>
-
-                {/* Compact Metrics Grid */}
-                <div className="grid grid-cols-2 gap-2 pt-2">
-                  <div className="p-2.5 rounded-xl bg-muted/50 border border-border/60 flex flex-col">
-                    <span className="text-[10px] text-muted-foreground font-semibold uppercase">Impressions</span>
-                    <span className="text-sm font-heading font-black text-rose-500">+1.84M</span>
-                  </div>
-                  <div className="p-2.5 rounded-xl bg-muted/50 border border-border/60 flex flex-col">
-                    <span className="text-[10px] text-muted-foreground font-semibold uppercase">Conversion Lift</span>
-                    <span className="text-sm font-heading font-black text-amber-500 font-serif">14.2x</span>
-                  </div>
-                </div>
-
-              </div>
+            <FadeIn delay={0.3} className="w-full">
+              <FunkyHeroCartoon />
             </FadeIn>
           </div>
 
