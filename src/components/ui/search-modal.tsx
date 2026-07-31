@@ -38,15 +38,15 @@ export function SearchModal({ isOpen, onClose }: { isOpen: boolean, onClose: () 
     <AnimatePresence>
       {isOpen && (
         <div className="fixed inset-0 z-[100] flex items-start justify-center pt-20 px-4">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
             className="absolute inset-0 bg-background/80 backdrop-blur-sm"
           />
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, scale: 0.95, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -20 }}
@@ -56,15 +56,15 @@ export function SearchModal({ isOpen, onClose }: { isOpen: boolean, onClose: () 
             {/* Search Input */}
             <div className="flex items-center px-4 border-b border-border/50">
               <Search className="w-5 h-5 text-muted-foreground mr-3" />
-              <input 
+              <input
                 autoFocus
-                type="text" 
+                type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search services, projects, or insights..."
                 className="flex-1 h-16 bg-transparent border-none outline-none text-lg text-foreground placeholder:text-muted-foreground"
               />
-              <button 
+              <button
                 onClick={onClose}
                 className="p-2 rounded-lg hover:bg-muted text-muted-foreground transition-colors"
               >
@@ -79,7 +79,7 @@ export function SearchModal({ isOpen, onClose }: { isOpen: boolean, onClose: () 
                   <div className="space-y-2">
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-2 mb-2">Results</p>
                     {searchResults.map((result, idx) => (
-                      <button 
+                      <button
                         key={idx}
                         onClick={() => {
                           router.push(result.link);
@@ -117,10 +117,10 @@ export function SearchModal({ isOpen, onClose }: { isOpen: boolean, onClose: () 
                 </div>
               )}
             </div>
-            
+
             <div className="p-3 border-t border-border/50 bg-muted/30 flex items-center justify-between text-xs text-muted-foreground">
               <span>Press <kbd className="font-mono bg-background px-1.5 py-0.5 rounded border border-border">ESC</kbd> to close</span>
-              <span>Search powered by Arohan</span>
+              <span>Search powered by aarohan</span>
             </div>
           </motion.div>
         </div>

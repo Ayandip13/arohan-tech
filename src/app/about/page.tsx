@@ -9,17 +9,17 @@ import { Rocket, Award } from "lucide-react";
 import { BrandingIllustration } from "@/components/ui/marketing-illustrations";
 
 export const metadata: Metadata = {
-  title: "About Us | Arohan Creative Marketing Agency",
-  description: "Discover the story, mission, and vision behind Arohan — a high-energy Creative Digital Marketing Agency.",
+  title: "About Us | aarohan Creative Marketing Agency",
+  description: "Discover the story, mission, and vision behind aarohan — a high-energy Creative Digital Marketing Agency.",
 };
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-1">
-        <PageHero 
+        <PageHero
           title="Architecting the Future of Digital Business & Growth"
           description="We are a collective of elite digital marketers, brand designers, and web developers dedicated to transforming how modern brands scale."
           badge="Our Story"
@@ -41,7 +41,7 @@ export default function AboutPage() {
                   </p>
                 </div>
               </FadeIn>
-              
+
               <FadeIn delay={0.2}>
                 <div className="p-7 rounded-3xl bg-background border-2 border-amber-500/30 shadow-lg h-full relative overflow-hidden group">
                   <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-400 to-rose-500 text-white flex items-center justify-center mb-5 shadow-md">
@@ -65,7 +65,7 @@ export default function AboutPage() {
                 <h2 className="text-3xl md:text-5xl font-heading font-black">Our Growth Journey</h2>
               </Reveal>
             </div>
-            
+
             <div className="max-w-3xl mx-auto space-y-6">
               {[
                 { year: "2018", title: "The Creative Inception", desc: "Launched as a boutique digital marketing firm helping local businesses digitize and scale brand reach." },
@@ -91,7 +91,7 @@ export default function AboutPage() {
 
         <FinalCTA />
       </main>
-      
+
       <Footer />
     </div>
   );

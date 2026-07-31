@@ -6,7 +6,7 @@ import { FinalCTA } from "@/components/sections/final-cta";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions | Arohan Tech Solution",
+  title: "Frequently Asked Questions | aarohan Tech Solution",
   description: "Find answers about our digital marketing, brand strategy, software development, and AI solutions.",
 };
 
@@ -14,9 +14,9 @@ export default function FAQPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-1">
-        <PageHero 
+        <PageHero
           title="Got Questions? We Have Answers."
           description="Everything you need to know about our growth marketing, brand strategy, software development, and onboarding process."
           badge="Support & FAQ"
@@ -26,7 +26,7 @@ export default function FAQPage() {
         <FAQAdvanced />
         <FinalCTA />
       </main>
-      
+
       <Footer />
     </div>
   );

@@ -48,7 +48,7 @@ export function Footer() {
                 </div>
               </div>
               <span className="font-heading font-extrabold text-2xl tracking-tight">
-                Arohan<span className="text-amber-500">.</span>
+                aarohan<span className="text-amber-500">.</span>
               </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
@@ -132,9 +132,9 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-6 border-t border-border/80 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-xs font-medium flex items-center gap-1">
-            &copy; {currentYear} Arohan Creative Agency. Crafted with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" /> for growth-driven brands.
+            &copy; {currentYear} aarohan Creative Agency. Crafted with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" /> for growth-driven brands.
           </p>
-          
+
           <div className="flex items-center gap-5 text-xs font-medium text-muted-foreground">
             <Link href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-foreground transition-colors">Terms</Link>

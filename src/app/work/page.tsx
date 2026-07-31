@@ -8,7 +8,7 @@ import Image from "next/image";
 import { ArrowUpRight, Tag } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Featured Case Studies & Work | Arohan Creative Marketing Agency",
+  title: "Featured Case Studies & Work | aarohan Creative Marketing Agency",
   description: "Explore our portfolio of high-converting digital marketing campaigns, brand identity designs, and scalable web platforms.",
 };
 
@@ -79,9 +79,9 @@ export default function WorkPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-1">
-        <PageHero 
+        <PageHero
           title="Featured Growth Case Studies"
           description="Explore how our creative marketing strategies, brand design, and custom web platforms delivered massive ROI for ambitious brands."
           badge="Our Portfolio"
@@ -96,8 +96,8 @@ export default function WorkPage() {
                   <div className="group rounded-3xl p-5 bg-card border-2 border-border/80 hover:border-rose-500/50 shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col justify-between h-full">
                     <div>
                       <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl mb-5 bg-muted">
-                        <Image 
-                          src={project.image} 
+                        <Image
+                          src={project.image}
                           alt={project.title}
                           fill
                           className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -108,17 +108,17 @@ export default function WorkPage() {
                           </span>
                         </div>
                       </div>
-                      
+
                       <div className="flex items-center gap-2.5 text-[11px] font-bold uppercase tracking-wider text-rose-500 mb-2">
                         <span className="flex items-center gap-1"><Tag className="w-3 h-3" /> {project.category}</span>
                         <span>•</span>
                         <span className="text-muted-foreground font-semibold">{project.industry}</span>
                       </div>
-                      
+
                       <h3 className="text-xl md:text-2xl font-heading font-black text-foreground mb-2 group-hover:text-rose-500 transition-colors leading-tight">
                         {project.title}
                       </h3>
-                      
+
                       <p className="text-muted-foreground text-xs md:text-sm leading-relaxed font-normal mb-5">
                         {project.desc}
                       </p>
@@ -139,7 +139,7 @@ export default function WorkPage() {
 
         <FinalCTA />
       </main>
-      
+
       <Footer />
     </div>
   );

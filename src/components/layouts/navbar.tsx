@@ -38,11 +38,10 @@ export function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? "py-3 glass border-b border-primary/20 shadow-lg shadow-primary/5"
           : "py-6 bg-transparent"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
         {/* Creative Logo */}
@@ -54,7 +53,7 @@ export function Navbar() {
           </div>
           <div className="flex flex-col">
             <span className="font-heading font-extrabold text-xl tracking-tight leading-none group-hover:text-primary transition-colors">
-              Arohan<span className="text-amber-500">.</span>
+              aarohan<span className="text-amber-500">.</span>
             </span>
             <span className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground">
               Creative Agency
@@ -71,11 +70,10 @@ export function Navbar() {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`relative px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
-                    isActive
+                  className={`relative px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${isActive
                       ? "text-white bg-gradient-to-r from-rose-500 to-amber-500 shadow-md shadow-rose-500/25"
                       : "text-foreground/80 hover:text-primary hover:bg-primary/5"
-                  }`}
+                    }`}
                 >
                   {link.name}
                   {isActive && (
@@ -97,9 +95,9 @@ export function Navbar() {
             >
               <Search className="w-4 h-4" />
             </button>
-            
+
             <ThemeSwitch />
-            
+
             <Link href="/contact">
               <Button variant="gradient" size="default" className="rounded-full shadow-lg shadow-rose-500/20">
                 <span>Let's Talk</span>
@@ -118,9 +116,9 @@ export function Navbar() {
           >
             <Search className="w-4 h-4" />
           </button>
-          
+
           <ThemeSwitch />
-          
+
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="p-2.5 rounded-full bg-gradient-to-r from-rose-500 to-amber-500 text-white shadow-md"
@@ -145,7 +143,7 @@ export function Navbar() {
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Navigation</span>
               </div>
-              
+
               <div className="grid grid-cols-1 gap-2">
                 {navLinks.map((link) => {
                   const isActive = pathname === link.href || (pathname.startsWith(link.href) && link.href !== '/');
@@ -154,11 +152,10 @@ export function Navbar() {
                       key={link.name}
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`text-lg font-bold py-3 px-4 rounded-2xl transition-all flex items-center justify-between ${
-                        isActive
+                      className={`text-lg font-bold py-3 px-4 rounded-2xl transition-all flex items-center justify-between ${isActive
                           ? "bg-gradient-to-r from-rose-500 to-amber-500 text-white shadow-lg"
                           : "text-foreground hover:bg-primary/10 hover:text-primary"
-                      }`}
+                        }`}
                     >
                       <span>{link.name}</span>
                       <ArrowUpRight className="w-4 h-4 opacity-70" />
@@ -166,7 +163,7 @@ export function Navbar() {
                   );
                 })}
               </div>
-              
+
               <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button variant="gradient" size="lg" className="w-full mt-2 rounded-2xl justify-center font-bold">
                   Start a Project 🚀

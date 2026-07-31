@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "Arohan Tech didn't just redesign our website—they overhauled our entire digital marketing engine. Our sales skyrocketed by 350% in 90 days!",
+    quote: "aarohan Tech didn't just redesign our website—they overhauled our entire digital marketing engine. Our sales skyrocketed by 350% in 90 days!",
     name: "Sarah Jenkins",
     role: "CMO, Vanguard Global",
     impact: "+350% Revenue Lift",
@@ -17,7 +17,7 @@ const testimonials = [
     color: "from-rose-500/10 to-amber-500/10",
   },
   {
-    quote: "The combination of high-converting creative ad campaigns and high-speed web platforms built by Arohan cut our customer acquisition costs by half.",
+    quote: "The combination of high-converting creative ad campaigns and high-speed web platforms built by aarohan cut our customer acquisition costs by half.",
     name: "Marcus Thorne",
     role: "Founder, Elevate Commerce",
     impact: "50% CAC Reduction",
@@ -35,7 +35,7 @@ const testimonials = [
     color: "from-purple-500/10 to-rose-500/10",
   },
   {
-    quote: "From UI/UX design to robust mobile apps, Arohan delivered an award-winning platform that our users absolutely love.",
+    quote: "From UI/UX design to robust mobile apps, aarohan delivered an award-winning platform that our users absolutely love.",
     name: "David Chen",
     role: "CTO, HealthSync",
     impact: "4.9 App Store Rating",
@@ -77,13 +77,13 @@ export function TestimonialsSection() {
 
       <div className="px-4 md:px-8 cursor-grab active:cursor-grabbing">
         <motion.div ref={containerRef} className="overflow-hidden">
-          <motion.div 
-            drag="x" 
-            dragConstraints={{ right: 0, left: -width }} 
+          <motion.div
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
             className="flex gap-5 md:gap-6 w-max pb-6"
           >
             {testimonials.map((t, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 className="w-[320px] md:w-[400px] p-6 md:p-7 rounded-3xl bg-background border-2 border-border/80 hover:border-rose-500/50 shadow-lg flex-shrink-0 flex flex-col justify-between"
                 whileHover={{ y: -4 }}
@@ -101,14 +101,14 @@ export function TestimonialsSection() {
                       {t.impact}
                     </span>
                   </div>
-                  
+
                   <Quote className="w-6 h-6 text-rose-500/30 mb-3" />
-                  
+
                   <p className="text-sm md:text-base text-foreground mb-6 leading-relaxed font-medium">
                     "{t.quote}"
                   </p>
                 </div>
-                
+
                 <div className="flex items-center gap-3 pt-4 border-t border-border/60">
                   <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover border-2 border-rose-500/30 shadow-md" />
                   <div>

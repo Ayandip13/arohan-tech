@@ -9,7 +9,7 @@ import { ArrowUpRight, Code, Megaphone, Smartphone, PenTool, BarChart, Server, W
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services & Capabilities | Arohan Creative Marketing Agency",
+  title: "Services & Capabilities | aarohan Creative Marketing Agency",
   description: "Explore our high-converting digital marketing, brand design, performance advertising, and full-stack web development.",
 };
 
@@ -28,9 +28,9 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-1">
-        <PageHero 
+        <PageHero
           title="Digital Capabilities & Growth Solutions"
           description="We fuse high-converting marketing strategies, brand design, and modern web development into one seamless growth engine."
           badge="Our Capabilities"
@@ -52,11 +52,11 @@ export default function ServicesPage() {
                           {service.tag}
                         </span>
                       </div>
-                      
+
                       <h3 className="text-xl font-heading font-black mb-2 text-foreground group-hover:text-rose-500 transition-colors">
                         {service.title}
                       </h3>
-                      
+
                       <p className="text-muted-foreground text-xs md:text-sm font-normal leading-relaxed mb-6">
                         {service.desc}
                       </p>
@@ -78,7 +78,7 @@ export default function ServicesPage() {
         <ServicesPreview />
         <FinalCTA />
       </main>
-      
+
       <Footer />
     </div>
   );

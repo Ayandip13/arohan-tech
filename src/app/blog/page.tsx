@@ -9,7 +9,7 @@ import Image from "next/image";
 import { ArrowRight, Search, Clock, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Growth & Creative Digest | Arohan Tech Solution",
+  title: "Growth & Creative Digest | aarohan Tech Solution",
   description: "Perspectives on digital marketing, viral growth, brand strategy, AI solutions, and software engineering.",
 };
 
@@ -66,9 +66,9 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-1">
-        <PageHero 
+        <PageHero
           title="Growth Digest & Creative Insights"
           description="Actionable marketing playbooks, brand design teardowns, and engineering guides from our agency squad."
           badge="Growth Blog"
@@ -81,25 +81,24 @@ export default function BlogPage() {
               {/* Category Filter */}
               <div className="flex overflow-x-auto pb-2 md:pb-0 w-full md:w-auto gap-2">
                 {categories.map((cat, idx) => (
-                  <button 
+                  <button
                     key={idx}
-                    className={`whitespace-nowrap px-4 py-2 rounded-full text-xs font-bold transition-all ${
-                      idx === 0 
-                        ? "bg-gradient-to-r from-rose-500 to-amber-500 text-white shadow-md" 
+                    className={`whitespace-nowrap px-4 py-2 rounded-full text-xs font-bold transition-all ${idx === 0
+                        ? "bg-gradient-to-r from-rose-500 to-amber-500 text-white shadow-md"
                         : "bg-card border border-border text-foreground hover:border-rose-500/50"
-                    }`}
+                      }`}
                   >
                     {cat}
                   </button>
                 ))}
               </div>
-              
+
               {/* Search */}
               <div className="relative w-full md:w-80 flex-shrink-0">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-rose-500" />
-                <input 
-                  type="text" 
-                  placeholder="Search articles..." 
+                <input
+                  type="text"
+                  placeholder="Search articles..."
                   className="w-full h-11 pl-11 pr-4 rounded-full bg-card border-2 border-border/80 focus:border-rose-500 outline-none text-xs font-medium"
                 />
               </div>
@@ -152,7 +151,7 @@ export default function BlogPage() {
                         </span>
                       </div>
                     </div>
-                    
+
                     <div className="p-8 flex flex-col flex-1 justify-between">
                       <div>
                         <div className="flex items-center gap-2 text-xs font-semibold text-muted-foreground mb-3">
@@ -181,7 +180,7 @@ export default function BlogPage() {
 
         <Newsletter />
       </main>
-      
+
       <Footer />
     </div>
   );

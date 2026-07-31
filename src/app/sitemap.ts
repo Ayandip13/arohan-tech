@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export default function sitemap() {
-  const baseUrl = 'https://arohantech.com'
+  const baseUrl = 'https://aarohantech.com'
 
   const routes = [
     '',

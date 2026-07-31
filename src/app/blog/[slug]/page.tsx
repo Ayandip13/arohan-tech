@@ -9,7 +9,7 @@ import { ChevronLeft, Clock, Calendar, Link2, ChevronRight, ArrowRight } from "l
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Future of Cloud Computing | Arohan Tech Solution",
+  title: "The Future of Cloud Computing | aarohan Tech Solution",
   description: "Exploring how distributed architectures are reshaping modern enterprises.",
 };
 
@@ -70,11 +70,11 @@ export default function BlogDetailPage() {
         {/* Article Body */}
         <section className="pb-24">
           <div className="container mx-auto px-4 md:px-8 max-w-6xl flex flex-col lg:flex-row gap-12">
-            
+
             {/* Left Sidebar (Share & TOC) */}
             <div className="hidden lg:block w-64 shrink-0">
               <div className="sticky top-32 flex flex-col gap-10">
-                
+
                 {/* Table of Contents */}
                 <div>
                   <h4 className="font-heading font-bold mb-4 text-foreground">Table of Contents</h4>
@@ -150,7 +150,7 @@ export default function BlogDetailPage() {
                     <p className="font-heading font-bold line-clamp-1 group-hover:text-primary transition-colors">Optimizing React Applications</p>
                   </div>
                 </Link>
-                
+
                 <Link href="/blog/data-driven-marketing" className="w-full md:w-1/2 p-6 rounded-2xl border border-border/50 hover:border-primary/40 hover:bg-muted/10 transition-colors group flex items-center gap-4 text-right justify-end">
                   <div>
                     <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-1">Next Article</p>
@@ -170,7 +170,7 @@ export default function BlogDetailPage() {
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="text-3xl font-heading font-bold mb-12">Related Insights</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
-              
+
               <Link href="/blog/optimizing-react-performance" className="group flex flex-col glass rounded-3xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all duration-300">
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <Image src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop" alt="React" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -196,7 +196,7 @@ export default function BlogDetailPage() {
                   <h3 className="text-xl font-heading font-bold group-hover:text-primary transition-colors leading-tight">Designing for Accessibility: A Commercial Imperative</h3>
                 </div>
               </Link>
-              
+
             </div>
           </div>
         </section>

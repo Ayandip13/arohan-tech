@@ -5,7 +5,7 @@ import { FadeIn } from "@/components/animations/fade-in";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | Arohan Tech Solution",
+  title: "Terms & Conditions | aarohan Tech Solution",
   description: "Terms and conditions for using our services.",
 };
 
@@ -13,9 +13,9 @@ export default function TermsPage() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
-      
+
       <main className="flex-1">
-        <PageHero 
+        <PageHero
           title="Terms & Conditions"
           description="Last updated: October 24, 2025"
           badge="Legal"
@@ -28,9 +28,9 @@ export default function TermsPage() {
               <div className="glass p-8 md:p-12 rounded-3xl border border-border/50 shadow-xl prose prose-lg dark:prose-invert max-w-none">
                 <h2>1. Agreement to Terms</h2>
                 <p>By accessing our website, you agree to be bound by these Terms of Service and to use our site in accordance with these Terms, our Privacy Policy, and any additional terms and conditions that may apply.</p>
-                
+
                 <h2>2. Intellectual Property Rights</h2>
-                <p>Other than the content you own, under these Terms, Arohan Tech Solution and/or its licensors own all the intellectual property rights and materials contained in this Website. You are granted limited license only for purposes of viewing the material contained on this Website.</p>
+                <p>Other than the content you own, under these Terms, aarohan Tech Solution and/or its licensors own all the intellectual property rights and materials contained in this Website. You are granted limited license only for purposes of viewing the material contained on this Website.</p>
 
                 <h2>3. Restrictions</h2>
                 <p>You are specifically restricted from all of the following:</p>
@@ -41,13 +41,13 @@ export default function TermsPage() {
                 </ul>
 
                 <h2>4. Limitation of Liability</h2>
-                <p>In no event shall Arohan Tech Solution, nor any of its officers, directors and employees, be held liable for anything arising out of or in any way connected with your use of this Website.</p>
+                <p>In no event shall aarohan Tech Solution, nor any of its officers, directors and employees, be held liable for anything arising out of or in any way connected with your use of this Website.</p>
               </div>
             </FadeIn>
           </div>
         </section>
       </main>
-      
+
       <Footer />
     </div>
   );

@@ -8,7 +8,7 @@
  * - Request timeouts
  */
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://api.arohantech.com/v1";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://api.aarohantech.com/v1";
 
 interface FetchOptions extends RequestInit {
   requireAuth?: boolean;

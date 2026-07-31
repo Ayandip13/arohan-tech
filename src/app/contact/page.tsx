@@ -8,8 +8,8 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import { ContactForm } from "@/components/forms/contact-form";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Arohan Tech Solution",
-  description: "Get in touch with Arohan Tech Solution to discuss your next digital project.",
+  title: "Contact Us | aarohan Tech Solution",
+  description: "Get in touch with aarohan Tech Solution to discuss your next digital project.",
 };
 
 export default function ContactPage() {
@@ -17,9 +17,9 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-1">
-        <PageHero 
+        <PageHero
           title="Let's Start a Conversation"
           description="Whether you need a complete digital transformation, a scalable cloud architecture, or a targeted marketing campaign, our experts are ready."
           badge="Contact"
@@ -29,13 +29,13 @@ export default function ContactPage() {
         <section className="py-24 bg-background">
           <div className="container mx-auto px-4 md:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
-              
+
               {/* Contact Information */}
               <div>
                 <Reveal>
                   <h2 className="text-3xl font-heading font-bold mb-8">Get in Touch</h2>
                 </Reveal>
-                
+
                 <div className="space-y-8 mb-12">
                   <FadeIn delay={0.1}>
                     <div className="flex items-start gap-4">
@@ -52,7 +52,7 @@ export default function ContactPage() {
                       </div>
                     </div>
                   </FadeIn>
-                  
+
                   <FadeIn delay={0.2}>
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
@@ -60,12 +60,12 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="font-bold mb-1 text-lg">Email Us</h3>
-                        <p className="text-muted-foreground mb-1">hello@arohantech.com</p>
-                        <p className="text-muted-foreground">careers@arohantech.com</p>
+                        <p className="text-muted-foreground mb-1">hello@aarohantech.com</p>
+                        <p className="text-muted-foreground">careers@aarohantech.com</p>
                       </div>
                     </div>
                   </FadeIn>
-                  
+
                   <FadeIn delay={0.3}>
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
@@ -92,7 +92,7 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
-      
+
       <Footer />
     </div>
   );

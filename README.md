@@ -1,8 +1,8 @@
-# Arohan Tech Solution
+# aarohan Tech Solution
 
-![Arohan Tech Solution](https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop)
+![aarohan Tech Solution](https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop)
 
-A premium, production-ready corporate platform for Arohan Tech Solution. This repository contains the frontend architecture, focusing on a luxury digital experience with exceptional performance, SEO, accessibility, and high-end micro-interactions.
+A premium, production-ready corporate platform for aarohan Tech Solution. This repository contains the frontend architecture, focusing on a luxury digital experience with exceptional performance, SEO, accessibility, and high-end micro-interactions.
 
 ## 🚀 Tech Stack
 
@@ -59,7 +59,7 @@ Create a `.env.local` file in the root directory for future API integrations.
 
 ```env
 # Future API Integrations
-NEXT_PUBLIC_API_URL=https://api.arohantech.com
+NEXT_PUBLIC_API_URL=https://api.aarohantech.com
 NEXT_PUBLIC_CMS_ENDPOINT=
 NEXT_PUBLIC_ANALYTICS_ID=
 ```

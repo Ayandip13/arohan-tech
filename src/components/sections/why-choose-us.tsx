@@ -45,7 +45,7 @@ export function WhyChooseUs() {
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
-          
+
           {/* Left Column */}
           <div className="lg:w-5/12 space-y-6">
             <FadeIn>
@@ -57,7 +57,7 @@ export function WhyChooseUs() {
 
             <Reveal>
               <h2 className="text-3xl md:text-5xl font-heading font-black tracking-tight leading-tight">
-                Why Top Brands Partner With <span className="gradient-text-coral-amber">Arohan.</span>
+                Why Top Brands Partner With <span className="gradient-text-coral-amber">aarohan.</span>
               </h2>
             </Reveal>
 
@@ -88,7 +88,7 @@ export function WhyChooseUs() {
               </div>
             </FadeIn>
           </div>
-          
+
           {/* Right Features Grid */}
           <div className="lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {features.map((feature, idx) => (
@@ -107,7 +107,7 @@ export function WhyChooseUs() {
                     <h3 className="text-base font-heading font-black mb-2 text-foreground group-hover:text-rose-500 transition-colors">
                       {feature.title}
                     </h3>
-                    
+
                     <p className="text-xs text-muted-foreground leading-relaxed">
                       {feature.description}
                     </p>

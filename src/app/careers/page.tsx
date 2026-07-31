@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Briefcase, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Careers & Open Roles | Arohan Creative Marketing Agency",
-  description: "Join our team of creative strategists, brand designers, and web developers at Arohan.",
+  title: "Careers & Open Roles | aarohan Creative Marketing Agency",
+  description: "Join our team of creative strategists, brand designers, and web developers at aarohan.",
 };
 
 const jobs = [
@@ -23,9 +23,9 @@ export default function CareersPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-1">
-        <PageHero 
+        <PageHero
           title="Build Bold Brands With Us"
           description="We are constantly searching for exceptional growth marketers, designers, and web developers who hate boring work."
           badge="Join Our Squad"
@@ -68,7 +68,7 @@ export default function CareersPage() {
 
         <FinalCTA />
       </main>
-      
+
       <Footer />
     </div>
   );

@@ -8,8 +8,8 @@ import { Metadata } from "next";
 import { Mail, Globe, Share2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Team & Leadership | Arohan Creative Marketing Agency",
-  description: "Meet the creative directors, growth strategists, and web developers driving Arohan.",
+  title: "Our Team & Leadership | aarohan Creative Marketing Agency",
+  description: "Meet the creative directors, growth strategists, and web developers driving aarohan.",
 };
 
 const leadership = [
@@ -40,9 +40,9 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-1">
-        <PageHero 
+        <PageHero
           title="Meet the Minds Behind the Magic"
           description="We are a collective of rebellious creatives, growth marketers, and web developers obsessed with results."
           badge="Leadership & Team"
@@ -56,13 +56,13 @@ export default function TeamPage() {
                 <FadeIn key={idx} delay={idx * 0.1}>
                   <div className="group rounded-3xl overflow-hidden bg-card border-2 border-border/80 hover:border-rose-500/50 shadow-lg transition-all duration-300">
                     <div className="relative aspect-[4/5] w-full overflow-hidden">
-                      <img 
-                        src={person.image} 
-                        alt={person.name} 
+                      <img
+                        src={person.image}
+                        alt={person.name}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 filter grayscale group-hover:grayscale-0"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90" />
-                      
+
                       <div className="absolute top-4 left-4">
                         <span className="px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-wider bg-rose-500 text-white shadow-md">
                           {person.badge}
@@ -75,7 +75,7 @@ export default function TeamPage() {
                         <p className="text-slate-300 text-xs font-normal leading-relaxed mb-4">
                           {person.bio}
                         </p>
-                        
+
                         <div className="flex gap-2 pt-3 border-t border-white/20">
                           <a href="#" className="w-7 h-7 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white hover:bg-rose-500 transition-colors" aria-label="Share">
                             <Share2 className="w-3.5 h-3.5" />
@@ -99,7 +99,7 @@ export default function TeamPage() {
         <TeamPreview />
         <FinalCTA />
       </main>
-      
+
       <Footer />
     </div>
   );

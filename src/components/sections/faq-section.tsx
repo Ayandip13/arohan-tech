@@ -40,7 +40,7 @@ export function FAQSection() {
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row gap-12">
-          
+
           {/* Left Column Callout */}
           <div className="lg:w-5/12 space-y-5">
             <FadeIn>
@@ -58,7 +58,7 @@ export function FAQSection() {
 
             <FadeIn delay={0.2}>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Everything you need to know about partnering with Arohan to scale your business.
+                Everything you need to know about partnering with aarohan to scale your business.
               </p>
             </FadeIn>
 
@@ -83,11 +83,11 @@ export function FAQSection() {
           <div className="lg:w-7/12 space-y-3.5">
             {faqs.map((faq, idx) => {
               const isOpen = openIndex === idx;
-              
+
               return (
                 <FadeIn key={idx} delay={0.05 * idx}>
                   <div className={`rounded-3xl border-2 transition-all duration-300 overflow-hidden ${isOpen ? 'bg-background border-rose-500 shadow-lg' : 'bg-background/70 border-border/80 hover:border-rose-500/40'}`}>
-                    <button 
+                    <button
                       onClick={() => setOpenIndex(isOpen ? null : idx)}
                       className="flex w-full items-center justify-between p-5 md:p-6 text-left focus:outline-none group"
                     >
@@ -98,7 +98,7 @@ export function FAQSection() {
                         {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                       </div>
                     </button>
-                    
+
                     <AnimatePresence>
                       {isOpen && (
                         <motion.div
