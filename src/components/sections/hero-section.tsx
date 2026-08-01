@@ -4,7 +4,7 @@ import { ArrowRight, Star, Megaphone } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Reveal } from "@/components/animations/reveal";
 import { MagneticButton } from "@/components/animations/magnetic-button";
-import { HandDrawnArrow, FunkySticker, DoodleStar } from "@/components/ui/funky-elements";
+import { FunkySticker, DoodleStar } from "@/components/ui/funky-elements";
 import { FunkyHeroCartoon } from "@/components/ui/funky-hero-cartoon";
 import Link from "next/link";
 
@@ -19,9 +19,7 @@ export function HeroSection() {
       <div className="absolute top-28 left-[6%] hidden xl:block pointer-events-none opacity-60">
         <DoodleStar className="w-7 h-7 text-amber-400" />
       </div>
-      <div className="absolute bottom-16 right-[45%] hidden xl:block pointer-events-none rotate-12 opacity-60">
-        <HandDrawnArrow className="w-12 h-10 text-rose-500/60" />
-      </div>
+
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">

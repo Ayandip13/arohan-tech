@@ -18,7 +18,7 @@
   --color-brand-pink: var(--brand-pink);
   --color-brand-mint: var(--brand-mint);
   --color-brand-sky: var(--brand-sky);
-  
+
   --color-success: var(--success);
   --color-warning: var(--warning);
   --color-error: var(--error);
@@ -56,23 +56,23 @@
   /* Vibrant Light Mode - Cream Warm White with Coral & Gold */
   --background: hsl(40 33% 97%);
   --foreground: hsl(230 40% 12%);
-  
+
   --card: hsl(0 0% 100%);
   --card-foreground: hsl(230 40% 12%);
-  
+
   --popover: hsl(0 0% 100%);
   --popover-foreground: hsl(230 40% 12%);
-  
+
   /* Primary - High Energy Coral / Sunset Pink */
   --brand-primary: hsl(354 95% 62%);
   --primary: hsl(354 95% 62%);
   --primary-foreground: hsl(0 0% 100%);
-  
+
   /* Secondary - Warm Golden Orange */
   --brand-secondary: hsl(38 96% 54%);
   --secondary: hsl(38 96% 54%);
   --secondary-foreground: hsl(230 40% 12%);
-  
+
   /* Accent - Electric Purple / Magenta */
   --brand-accent: hsl(270 85% 60%);
   --accent: hsl(270 85% 60%);
@@ -82,21 +82,21 @@
   --brand-pink: hsl(330 90% 65%);
   --brand-mint: hsl(162 80% 42%);
   --brand-sky: hsl(198 90% 50%);
-  
+
   --muted: hsl(35 25% 92%);
   --muted-foreground: hsl(230 15% 42%);
-  
+
   --destructive: hsl(0 84% 60%);
   --destructive-foreground: hsl(0 0% 100%);
 
   --success: hsl(162 80% 40%);
   --warning: hsl(38 96% 50%);
   --error: hsl(0 84% 60%);
-  
+
   --border: hsl(35 30% 88%);
   --input: hsl(35 30% 88%);
   --ring: hsl(354 95% 62%);
-  
+
   --radius: 1.25rem;
 
   --glass: rgba(255, 255, 255, 0.75);
@@ -107,23 +107,23 @@
   /* Creative Dark Mode - Deep Purple Velvet */
   --background: hsl(250 30% 8%);
   --foreground: hsl(40 33% 96%);
-  
+
   --card: hsl(250 25% 12%);
   --card-foreground: hsl(40 33% 96%);
-  
+
   --popover: hsl(250 25% 12%);
   --popover-foreground: hsl(40 33% 96%);
-  
+
   /* Primary - Neon Coral */
   --brand-primary: hsl(354 100% 66%);
   --primary: hsl(354 100% 66%);
   --primary-foreground: hsl(250 30% 8%);
-  
+
   /* Secondary - Bright Golden Sunset */
   --brand-secondary: hsl(40 100% 55%);
   --secondary: hsl(40 100% 55%);
   --secondary-foreground: hsl(250 30% 8%);
-  
+
   /* Accent - Glowing Violet */
   --brand-accent: hsl(275 90% 68%);
   --accent: hsl(275 90% 68%);
@@ -132,13 +132,13 @@
   --brand-pink: hsl(330 95% 70%);
   --brand-mint: hsl(162 85% 50%);
   --brand-sky: hsl(198 95% 60%);
-  
+
   --muted: hsl(250 20% 16%);
   --muted-foreground: hsl(250 15% 70%);
-  
+
   --destructive: hsl(0 75% 55%);
   --destructive-foreground: hsl(0 0% 98%);
-  
+
   --success: hsl(162 85% 45%);
   --warning: hsl(40 100% 55%);
   --error: hsl(0 75% 55%);
@@ -154,47 +154,143 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    cursor: inherit;
   }
+
   body {
     @apply bg-background text-foreground overflow-x-hidden selection:bg-primary selection:text-white;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    cursor: default;
   }
+
   html {
     @apply font-sans antialiased scroll-smooth;
+    cursor: default;
+  }
+
+  /* Preserve pointer on interactive and clickable elements */
+  a,
+  button,
+  [role="button"],
+  [role="link"],
+  [role="menuitem"],
+  [role="tab"],
+  [role="switch"],
+  [role="checkbox"],
+  [role="radio"],
+  [role="combobox"],
+  [role="option"],
+  label[for],
+  select,
+  summary {
+    cursor: pointer;
+  }
+
+  /* Keep I-beam cursor only on text input fields and editable areas */
+  input,
+  textarea,
+  [contenteditable="true"],
+  [contenteditable=""] {
+    cursor: text;
+  }
+
+  /* Clickable form inputs */
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="file"],
+  input[type="range"],
+  input[type="color"] {
+    cursor: pointer;
+  }
+
+  /* Disabled controls */
+  input[disabled],
+  button[disabled],
+  textarea[disabled],
+  select[disabled],
+  [disabled] {
+    cursor: not-allowed;
   }
 }
 
 /* Animations */
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-33.33%); }
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-33.33%);
+  }
 }
 
 @keyframes marquee-reverse {
-  0% { transform: translateX(-33.33%); }
-  100% { transform: translateX(0%); }
+  0% {
+    transform: translateX(-33.33%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-12px) rotate(2deg); }
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
 }
 
 @keyframes float-reverse {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(12px) rotate(-2deg); }
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(12px) rotate(-2deg);
+  }
 }
 
 @keyframes pulse-glow {
-  0%, 100% { opacity: 0.6; transform: scale(1); }
-  50% { opacity: 0.9; transform: scale(1.08); }
+
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.08);
+  }
 }
 
 @keyframes blob-spin {
-  0% { transform: rotate(0deg) scale(1); }
-  33% { transform: rotate(120deg) scale(1.1); }
-  66% { transform: rotate(240deg) scale(0.95); }
-  100% { transform: rotate(360deg) scale(1); }
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  33% {
+    transform: rotate(120deg) scale(1.1);
+  }
+
+  66% {
+    transform: rotate(240deg) scale(0.95);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
 }
 
 @utility animate-marquee {
@@ -222,7 +318,7 @@
 }
 
 @utility glass {
-  @apply bg-[var(--glass)] backdrop-blur-xl border border-[var(--glass-border)] shadow-[0_8px_32px_0_rgba(255,107,107,0.08)];
+  @apply bg-[var(--glass)] backdrop-blur-xl border border-[var(--glass-border)] shadow-[0_8px_32px_0_#ff6b6b14];
 }
 
 @utility glass-card {
@@ -234,7 +330,7 @@
 }
 
 @utility paper-card {
-  @apply bg-card border-2 border-slate-900/15 dark:border-white/15 shadow-[4px_4px_0px_0px_rgba(0,0,0,0.9)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.8)] transition-all duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,0.9)] dark:hover:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.8)];
+  @apply bg-card border-2 border-slate-900/15 dark:border-white/15 shadow-[4px_4px_0px_0px_#000000e6] dark:shadow-[4px_4px_0px_0px_#ffffffcc] transition-all duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_0px_#000000e6] dark:hover:shadow-[6px_6px_0px_0px_#ffffffcc];
 }
 
 @utility funky-badge {
@@ -262,8 +358,8 @@
 
 .gradient-bg-hero {
   background: radial-gradient(circle at 10% 20%, rgba(255, 83, 100, 0.15) 0%, transparent 40%),
-              radial-gradient(circle at 90% 60%, rgba(255, 183, 3, 0.15) 0%, transparent 40%),
-              radial-gradient(circle at 50% 80%, rgba(168, 85, 247, 0.12) 0%, transparent 50%);
+    radial-gradient(circle at 90% 60%, rgba(255, 183, 3, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(168, 85, 247, 0.12) 0%, transparent 50%);
 }
 
 .gradient-button-primary {

@@ -20,14 +20,14 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-1">
         <HeroSection />
         <TrustedBy />
         <ServicesPreview />
 
         {/* Interstitial Meme Placeholder 1 */}
-        <MemePlaceholderCard 
+        <MemePlaceholderCard
           title="Client: 'Can we make the logo bigger & add 15 more popups?'"
           caption="Our UI team taking a deep breath before saving the conversion rate... ☕"
           variant="rose"
@@ -38,7 +38,7 @@ export default function Home() {
         <FeaturedProjects />
 
         {/* Interstitial Meme Placeholder 2 */}
-        <MemePlaceholderCard 
+        <MemePlaceholderCard
           title="When the Meta Ads algorithm hits a 4.2x ROAS on day 1"
           caption="The growth squad celebrating in Slack like we just won a Championship 🏆"
           variant="amber"
@@ -49,18 +49,17 @@ export default function Home() {
         <TestimonialsSection />
 
         {/* Interstitial Meme Placeholder 3 */}
-        <MemePlaceholderCard 
+        <MemePlaceholderCard
           title="Copywriter vs Designer debating font sizes for 45 minutes"
           caption="Both agreeing that 'Inter' is superior anyway... 🎨"
           variant="purple"
         />
 
-        <TeamPreview />
         <TechStack />
         <InsightsSection />
 
         {/* Interstitial Meme Placeholder 4 */}
-        <MemePlaceholderCard 
+        <MemePlaceholderCard
           title="Marketing Lead reading competitor's ad copy in 2026"
           caption="Writing a viral counter-hook in 30 seconds... 🚀"
           variant="emerald"
