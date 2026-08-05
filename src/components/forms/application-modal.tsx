@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   X, 
@@ -50,9 +51,14 @@ interface ApplicationModalProps {
 }
 
 export function ApplicationModal({ isOpen, jobRole, onClose }: ApplicationModalProps) {
+  const [mounted, setMounted] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [resumeFile, setResumeFile] = useState<File | null>(null);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const [formData, setFormData] = useState({
     fullName: "",
@@ -82,11 +88,14 @@ export function ApplicationModal({ isOpen, jobRole, onClose }: ApplicationModalP
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
+      document.documentElement.style.overflow = "auto";
     }
     return () => {
       document.body.style.overflow = "auto";
+      document.documentElement.style.overflow = "auto";
     };
   }, [isOpen]);
 
@@ -151,10 +160,12 @@ export function ApplicationModal({ isOpen, jobRole, onClose }: ApplicationModalP
     }
   };
 
-  return (
+  if (!mounted) return null;
+
+  return createPortal(
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center p-4 md:p-6 overflow-y-auto">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 md:p-6 overflow-y-auto">
           {/* Background overlay with blur */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -467,6 +478,7 @@ export function ApplicationModal({ isOpen, jobRole, onClose }: ApplicationModalP
           </motion.div>
         </div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 }
