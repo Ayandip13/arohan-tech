@@ -333,11 +333,11 @@ export function ApplicationModal({ isOpen, jobRole, onClose }: ApplicationModalP
                     </div>
                   </div>
 
-                  {/* Optional Links Grid */}
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-                    <div className="space-y-1.5">
+                  {/* Optional Details Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div className="flex flex-col gap-1.5 justify-end">
                       <label className="text-xs font-extrabold uppercase tracking-wider text-muted-foreground">
-                        Current Company (Opt.)
+                        Current Company (Optional)
                       </label>
                       <input
                         type="text"
@@ -349,39 +349,39 @@ export function ApplicationModal({ isOpen, jobRole, onClose }: ApplicationModalP
                       />
                     </div>
 
-                    <div className="space-y-1.5">
+                    <div className="flex flex-col gap-1.5 justify-end">
                       <label className="text-xs font-extrabold uppercase tracking-wider text-muted-foreground">
-                        Portfolio / Website (Opt.)
-                      </label>
-                      <input
-                        type="url"
-                        disabled={status === "loading"}
-                        value={formData.portfolio}
-                        onChange={(e) => setFormData({ ...formData, portfolio: e.target.value })}
-                        placeholder="https://portfolio.me"
-                        className="w-full h-12 px-4 rounded-2xl bg-background border-2 border-border/80 focus:border-rose-500 focus:outline-none transition-colors text-sm font-medium disabled:opacity-50"
-                      />
-                    </div>
-
-                    <div className="space-y-1.5">
-                      <label className="text-xs font-extrabold uppercase tracking-wider text-muted-foreground">
-                        LinkedIn Profile (Opt.)
+                        LinkedIn Profile (Optional)
                       </label>
                       <input
                         type="url"
                         disabled={status === "loading"}
                         value={formData.linkedin}
                         onChange={(e) => setFormData({ ...formData, linkedin: e.target.value })}
-                        placeholder="https://linkedin.com/in/..."
+                        placeholder="https://linkedin.com/in/username"
                         className="w-full h-12 px-4 rounded-2xl bg-background border-2 border-border/80 focus:border-rose-500 focus:outline-none transition-colors text-sm font-medium disabled:opacity-50"
                       />
                     </div>
                   </div>
 
-                  {/* Resume Upload Placeholder */}
+                  <div className="flex flex-col gap-1.5">
+                    <label className="text-xs font-extrabold uppercase tracking-wider text-muted-foreground">
+                      Portfolio / Personal Website (Optional)
+                    </label>
+                    <input
+                      type="url"
+                      disabled={status === "loading"}
+                      value={formData.portfolio}
+                      onChange={(e) => setFormData({ ...formData, portfolio: e.target.value })}
+                      placeholder="https://portfolio.me or Figma / GitHub link"
+                      className="w-full h-12 px-4 rounded-2xl bg-background border-2 border-border/80 focus:border-rose-500 focus:outline-none transition-colors text-sm font-medium disabled:opacity-50"
+                    />
+                  </div>
+
+                  {/* Resume Upload */}
                   <div className="space-y-1.5">
                     <label className="text-xs font-extrabold uppercase tracking-wider text-foreground">
-                      Resume Upload (Optional Placeholder)
+                      Resume / CV Upload (PDF, DOCX) *
                     </label>
                     <label className="border-2 border-dashed border-border/80 hover:border-rose-500/50 rounded-2xl p-5 flex flex-col items-center justify-center gap-2 text-center bg-background/50 hover:bg-rose-500/5 transition-all cursor-pointer group">
                       <input
