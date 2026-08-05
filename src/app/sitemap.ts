@@ -8,7 +8,6 @@ export default function sitemap() {
     '/about',
     '/services',
     '/work',
-    '/team',
     '/careers',
     '/contact',
     '/blog',
