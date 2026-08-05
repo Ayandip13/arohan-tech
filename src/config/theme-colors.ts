@@ -2,7 +2,7 @@
  * Centralized Application Color & Design Token Registry
  * 
  * Every color value, brand palette token, gradient preset, badge style,
- * and ambient glow effect across the aarohan website is defined here.
+ * and ambient glow effect across the Aarohan website is defined here.
  */
 
 // 1. Raw Hex Colors

@@ -5,7 +5,7 @@ import { FadeIn } from "@/components/animations/fade-in";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | aarohan Tech Solution",
+  title: "Privacy Policy | Aarohan Tech Solution",
   description: "Our privacy policy and data handling procedures.",
 };
 
@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
             <FadeIn>
               <div className="glass p-8 md:p-12 rounded-3xl border border-border/50 shadow-xl prose prose-lg dark:prose-invert max-w-none">
                 <h2>1. Introduction</h2>
-                <p>At aarohan Tech Solution, we respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website.</p>
+                <p>At Aarohan Tech Solution, we respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website.</p>
 
                 <h2>2. The Data We Collect About You</h2>
                 <p>Personal data, or personal information, means any information about an individual from which that person can be identified. We may collect, use, store and transfer different kinds of personal data about you which we have grouped together as follows:</p>

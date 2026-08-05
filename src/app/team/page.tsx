@@ -8,8 +8,8 @@ import { Metadata } from "next";
 import { Mail, Globe, Share2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Team & Leadership | aarohan Creative Marketing Agency",
-  description: "Meet the creative directors, growth strategists, and web developers driving aarohan.",
+  title: "Our Team & Leadership | Aarohan Creative Marketing Agency",
+  description: "Meet the creative directors, growth strategists, and web developers driving Aarohan.",
 };
 
 const leadership = [

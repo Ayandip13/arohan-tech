@@ -31,7 +31,7 @@ export function HeroSection() {
               <div className="flex flex-wrap items-center gap-3">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs uppercase tracking-widest border border-rose-500/20">
                   <Megaphone className="w-3.5 h-3.5 text-rose-500" />
-                  <span>Creative Digital Marketing Agency</span>
+                  <span>Creative Marketing Agency</span>
                 </div>
                 <FunkySticker color="bg-amber-400 text-slate-950" rotation="rotate-2">
                   <span>#1 ROI Boost 🚀</span>
@@ -62,7 +62,7 @@ export function HeroSection() {
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <Link href="/contact">
                   <MagneticButton variant="gradient" size="default" className="rounded-full shadow-xl shadow-rose-500/20 px-7 font-extrabold text-sm">
-                    <span>Start Your Campaign</span>
+                    <span>Contact Us</span>
                     <ArrowRight className="w-4 h-4 ml-1.5" />
                   </MagneticButton>
                 </Link>
@@ -78,27 +78,14 @@ export function HeroSection() {
             {/* Social Proof Bar */}
             <FadeIn delay={0.5}>
               <div className="flex flex-wrap items-center gap-4 pt-4 border-t border-border/50">
-                <div className="flex -space-x-2.5">
-                  {[
-                    "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80",
-                    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80",
-                    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80",
-                  ].map((img, i) => (
-                    <img key={i} src={img} alt="Client avatar" className="w-8 h-8 rounded-full border-2 border-background object-cover shadow-sm" />
-                  ))}
-                  <div className="w-8 h-8 rounded-full bg-rose-500 border-2 border-background flex items-center justify-center text-white text-[11px] font-black">
-                    180+
-                  </div>
-                </div>
-
                 <div className="flex items-center gap-2">
                   <div className="flex text-amber-400">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-amber-400" />
+                      <Star key={i} className="w-4 h-4 fill-amber-400" />
                     ))}
                   </div>
-                  <span className="text-xs font-bold text-foreground">4.9/5 Rating</span>
-                  <span className="text-xs text-muted-foreground">• Trusted by top growth brands</span>
+                  <span className="text-sm font-bold text-foreground">4.9/5 Rating</span>
+                  <span className="text-sm text-muted-foreground">• Trusted by 180+ top growth brands</span>
                 </div>
               </div>
             </FadeIn>

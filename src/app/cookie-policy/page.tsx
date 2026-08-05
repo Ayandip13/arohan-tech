@@ -5,8 +5,8 @@ import { FadeIn } from "@/components/animations/fade-in";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cookie Policy | aarohan Tech Solution",
-  description: "How we use cookies to improve your experience.",
+  title: "Cookie Policy | Aarohan Tech Solution",
+  description: "Learn about how we use cookies and tracking technologies to optimize experience.",
 };
 
 export default function CookiePolicyPage() {

@@ -5,7 +5,7 @@ import { FadeIn } from "@/components/animations/fade-in";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions | aarohan Tech Solution",
+  title: "Terms & Conditions | Aarohan Tech Solution",
   description: "Terms and conditions for using our services.",
 };
 
@@ -30,7 +30,7 @@ export default function TermsPage() {
                 <p>By accessing our website, you agree to be bound by these Terms of Service and to use our site in accordance with these Terms, our Privacy Policy, and any additional terms and conditions that may apply.</p>
 
                 <h2>2. Intellectual Property Rights</h2>
-                <p>Other than the content you own, under these Terms, aarohan Tech Solution and/or its licensors own all the intellectual property rights and materials contained in this Website. You are granted limited license only for purposes of viewing the material contained on this Website.</p>
+                <p>Other than the content you own, under these Terms, Aarohan Tech Solution and/or its licensors own all the intellectual property rights and materials contained in this Website. You are granted limited license only for purposes of viewing the material contained on this Website.</p>
 
                 <h2>3. Restrictions</h2>
                 <p>You are specifically restricted from all of the following:</p>
@@ -41,7 +41,7 @@ export default function TermsPage() {
                 </ul>
 
                 <h2>4. Limitation of Liability</h2>
-                <p>In no event shall aarohan Tech Solution, nor any of its officers, directors and employees, be held liable for anything arising out of or in any way connected with your use of this Website.</p>
+                <p>In no event shall Aarohan Tech Solution, nor any of its officers, directors and employees, be held liable for anything arising out of or in any way connected with your use of this Website.</p>
               </div>
             </FadeIn>
           </div>

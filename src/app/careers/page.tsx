@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Briefcase, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Careers & Open Roles | aarohan Creative Marketing Agency",
-  description: "Join our team of creative strategists, brand designers, and web developers at aarohan.",
+  title: "Careers & Open Roles | Aarohan Creative Marketing Agency",
+  description: "Join our team of creative strategists, brand designers, and web developers at Aarohan.",
 };
 
 const jobs = [

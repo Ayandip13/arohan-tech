@@ -6,8 +6,8 @@ import { FinalCTA } from "@/components/sections/final-cta";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions | aarohan Tech Solution",
-  description: "Find answers about our digital marketing, brand strategy, software development, and AI solutions.",
+  title: "Frequently Asked Questions | Aarohan Tech Solution",
+  description: "Answers to common questions regarding digital growth strategies, ad management, pricing, and onboarding.",
 };
 
 export default function FAQPage() {

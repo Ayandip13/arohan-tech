@@ -8,7 +8,7 @@ import Image from "next/image";
 import { ArrowUpRight, Tag } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Featured Case Studies & Work | aarohan Creative Marketing Agency",
+  title: "Our Work & Portfolio | Aarohan Creative Marketing Agency",
   description: "Explore our portfolio of high-converting digital marketing campaigns, brand identity designs, and scalable web platforms.",
 };
 

@@ -120,7 +120,7 @@ export function SearchModal({ isOpen, onClose }: { isOpen: boolean, onClose: () 
 
             <div className="p-3 border-t border-border/50 bg-muted/30 flex items-center justify-between text-xs text-muted-foreground">
               <span>Press <kbd className="font-mono bg-background px-1.5 py-0.5 rounded border border-border">ESC</kbd> to close</span>
-              <span>Search powered by aarohan</span>
+              <span>Search powered by Aarohan</span>
             </div>
           </motion.div>
         </div>

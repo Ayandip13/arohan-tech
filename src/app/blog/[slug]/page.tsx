@@ -9,8 +9,8 @@ import { ChevronLeft, Clock, Calendar, Link2, ChevronRight, ArrowRight } from "l
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Future of Cloud Computing | aarohan Tech Solution",
-  description: "Exploring how distributed architectures are reshaping modern enterprises.",
+  title: "The Future of Cloud Computing | Aarohan Tech Solution",
+  description: "How modern enterprises scale effortlessly using serverless architectures and distributed computing.",
 };
 
 export default function BlogDetailPage() {

@@ -8,21 +8,21 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "aarohan Tech didn't just redesign our website—they overhauled our entire digital marketing engine. Our sales skyrocketed by 350% in 90 days!",
+    quote: "Aarohan Tech didn't just redesign our website—they overhauled our entire digital marketing engine. Our sales skyrocketed by 350% in 90 days!",
     name: "Sarah Jenkins",
     role: "CMO, Vanguard Global",
     impact: "+350% Revenue Lift",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+    initials: "SJ",
     color: "from-rose-500/10 to-amber-500/10",
   },
   {
-    quote: "The combination of high-converting creative ad campaigns and high-speed web platforms built by aarohan cut our customer acquisition costs by half.",
+    quote: "The combination of high-converting creative ad campaigns and high-speed web platforms built by Aarohan cut our customer acquisition costs by half.",
     name: "Marcus Thorne",
     role: "Founder, Elevate Commerce",
     impact: "50% CAC Reduction",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+    initials: "MT",
     color: "from-amber-500/10 to-rose-500/10",
   },
   {
@@ -31,16 +31,16 @@ const testimonials = [
     role: "VP Marketing, TechNova",
     impact: "1.2M New Leads",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+    initials: "ER",
     color: "from-purple-500/10 to-rose-500/10",
   },
   {
-    quote: "From UI/UX design to robust mobile apps, aarohan delivered an award-winning platform that our users absolutely love.",
+    quote: "From UI/UX design to robust mobile apps, Aarohan delivered an award-winning platform that our users absolutely love.",
     name: "David Chen",
     role: "CTO, HealthSync",
     impact: "4.9 App Store Rating",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80",
+    initials: "DC",
     color: "from-emerald-500/10 to-sky-500/10",
   },
 ];
@@ -110,7 +110,9 @@ export function TestimonialsSection() {
                 </div>
 
                 <div className="flex items-center gap-3 pt-4 border-t border-border/60">
-                  <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover border-2 border-rose-500/30 shadow-md" />
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-rose-500 to-amber-500 text-white flex items-center justify-center font-bold text-xs border-2 border-rose-500/30 shadow-md">
+                    {t.initials}
+                  </div>
                   <div>
                     <h4 className="font-extrabold font-heading text-sm text-foreground">{t.name}</h4>
                     <p className="text-[11px] font-semibold text-muted-foreground">{t.role}</p>

@@ -9,8 +9,8 @@ import { Rocket, Award } from "lucide-react";
 import { BrandingIllustration } from "@/components/ui/marketing-illustrations";
 
 export const metadata: Metadata = {
-  title: "About Us | aarohan Creative Marketing Agency",
-  description: "Discover the story, mission, and vision behind aarohan — a high-energy Creative Digital Marketing Agency.",
+  title: "About Us | Aarohan Creative Marketing Agency",
+  description: "Discover the story, mission, and vision behind Aarohan — a high-energy Creative Marketing Agency.",
 };
 
 export default function AboutPage() {
@@ -49,7 +49,7 @@ export default function AboutPage() {
                   </div>
                   <h2 className="text-2xl font-heading font-black mb-3 text-foreground">Our Vision</h2>
                   <p className="text-base text-muted-foreground leading-relaxed font-normal">
-                    To be the global benchmark for creative digital marketing agencies, recognized for fusing viral marketing strategies with cutting-edge web design and brand storytelling.
+                    To be the global benchmark for creative marketing agencies, recognized for fusing viral marketing strategies with cutting-edge web design and brand storytelling.
                   </p>
                 </div>
               </FadeIn>

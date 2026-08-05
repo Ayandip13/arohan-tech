@@ -9,8 +9,8 @@ import { ArrowUpRight, Code, Megaphone, Smartphone, PenTool, BarChart, Server, W
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services & Capabilities | aarohan Creative Marketing Agency",
-  description: "Explore our high-converting digital marketing, brand design, performance advertising, and full-stack web development.",
+  title: "Services & Capabilities | Aarohan Creative Marketing Agency",
+  description: "Comprehensive digital marketing, social campaign execution, performance ads, brand design, and modern web engineering.",
 };
 
 const allServices = [

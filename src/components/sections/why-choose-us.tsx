@@ -57,7 +57,7 @@ export function WhyChooseUs() {
 
             <Reveal>
               <h2 className="text-3xl md:text-5xl font-heading font-black tracking-tight leading-tight">
-                Why Top Brands Partner With <span className="gradient-text-coral-amber">aarohan.</span>
+                Why Top Brands Partner With <span className="gradient-text-coral-amber">Aarohan.</span>
               </h2>
             </Reveal>
 

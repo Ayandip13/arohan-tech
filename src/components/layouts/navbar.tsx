@@ -44,16 +44,17 @@ export function Navbar() {
         }`}
     >
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
-        {/* Creative Logo */}
+        {/* Creative Logo Placeholder */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-rose-500 via-amber-400 to-purple-600 p-[2px] shadow-lg shadow-rose-500/20 group-hover:scale-105 transition-transform duration-300">
-            <div className="w-full h-full bg-background rounded-[14px] flex items-center justify-center text-foreground font-heading font-black text-xl">
-              A<span className="text-primary font-serif">✦</span>
+          <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-rose-500 via-amber-400 to-purple-600 p-[2px] shadow-lg shadow-rose-500/20 group-hover:scale-105 transition-transform duration-300 flex items-center justify-center">
+            <div className="w-full h-full bg-background rounded-[14px] flex items-center justify-center text-foreground font-heading font-extrabold text-xs tracking-wider border border-dashed border-primary/40">
+              {/* TODO: Replace this div with an Image component for Aarohan Logo */}
+              <span>LOGO</span>
             </div>
           </div>
           <div className="flex flex-col">
             <span className="font-heading font-extrabold text-xl tracking-tight leading-none group-hover:text-primary transition-colors">
-              aarohan<span className="text-amber-500">.</span>
+              Aarohan<span className="text-amber-500">.</span>
             </span>
             <span className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground">
               Creative Agency

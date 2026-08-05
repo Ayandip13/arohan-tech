@@ -8,8 +8,8 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import { ContactForm } from "@/components/forms/contact-form";
 
 export const metadata: Metadata = {
-  title: "Contact Us | aarohan Tech Solution",
-  description: "Get in touch with aarohan Tech Solution to discuss your next digital project.",
+  title: "Contact Us | Aarohan Tech Solution",
+  description: "Get in touch with Aarohan Tech Solution to discuss your next digital project.",
 };
 
 export default function ContactPage() {

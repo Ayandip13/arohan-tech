@@ -52,7 +52,7 @@ export function InsightsSection() {
             <FadeIn>
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs uppercase tracking-widest mb-3">
                 <BookOpen className="w-3.5 h-3.5" />
-                <span>Growth Digest & Insights</span>
+                <span>Agency Insights & Articles</span>
               </div>
             </FadeIn>
 

@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "aarohan Tech Solution",
+  name: "Aarohan Tech Solution",
   description: "A luxury digital marketing agency expanding into software development, cloud infrastructure, and technology consulting.",
   url: "https://aarohantech.com",
   ogImage: "https://aarohantech.com/og.jpg",

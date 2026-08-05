@@ -58,7 +58,7 @@ export function FAQSection() {
 
             <FadeIn delay={0.2}>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Everything you need to know about partnering with aarohan to scale your business.
+                Everything you need to know about partnering with Aarohan to scale your business.
               </p>
             </FadeIn>
 

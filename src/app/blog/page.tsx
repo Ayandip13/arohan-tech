@@ -9,7 +9,7 @@ import Image from "next/image";
 import { ArrowRight, Search, Clock, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Growth & Creative Digest | aarohan Tech Solution",
+  title: "Our Blog | Aarohan Tech Solution",
   description: "Perspectives on digital marketing, viral growth, brand strategy, AI solutions, and software engineering.",
 };
 
@@ -69,7 +69,7 @@ export default function BlogPage() {
 
       <main className="flex-1">
         <PageHero
-          title="Growth Digest & Creative Insights"
+          title="Our Blog & Creative Insights"
           description="Actionable marketing playbooks, brand design teardowns, and engineering guides from our agency squad."
           badge="Growth Blog"
           breadcrumbs={[{ label: "Blog", href: "/blog" }]}

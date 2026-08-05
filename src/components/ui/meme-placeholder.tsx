@@ -16,7 +16,7 @@ interface MemePlaceholderProps {
 export function MemePlaceholderCard({
   title = "[Insert Hilarious Client vs Agency Meme Here]",
   caption = "When the client approves the first draft without any changes... 🤯",
-  tag = "Agency Humor Corner",
+  tag = "Agency Humour Corner",
   variant = "rose",
   className = "",
 }: MemePlaceholderProps) {
