@@ -9,24 +9,24 @@ import Link from "next/link";
 
 const faqs = [
   {
-    question: "Do you focus primarily on Digital Marketing or Software Engineering?",
-    answer: "We offer both seamlessly! Our heritage is high-impact digital marketing, brand identity, and growth campaigns. As clients required scalable tech, we built an elite software team to craft Next.js web apps and mobile apps."
+    question: "Why should I choose Aarohan Tech Solutions?",
+    answer: "At Aarohan Tech Solutions we believe in building partnerships not just delivering services. We combine creativity, strategy, technology and data to create solutions that drive real business growth. From the first idea to long term scaling, we work alongside you to help your brand stand out and succeed."
   },
   {
-    question: "What is your typical project timeline & onboarding?",
-    answer: "Growth marketing & ad campaign strategies launch within 7–14 days. Custom web development projects typically take 4–8 weeks depending on scope, run in agile 2-week sprints with full Slack visibility."
+    question: "What services does Aarohan Tech Solutions offer?",
+    answer: "We offer branding, website design and development, SEO, social media marketing, performance marketing, Google Ads, Meta Ads, content creation, UI and UX design, graphic design, video editing, analytics and complete digital marketing solutions tailored to your business goals."
   },
   {
-    question: "How do you structure pricing & retainers?",
-    answer: "We offer performance retainers for digital marketing & SEO, project-based contracts for branding & web builds, and dedicated squad retainers for ongoing software engineering."
+    question: "What makes Aarohan Tech Solutions different?",
+    answer: "We are not a typical marketing agency. We take the time to understand your business, your audience and your vision before creating a strategy. Our focus is on measurable growth, creative storytelling and building brands that leave a lasting impression."
   },
   {
-    question: "How do we track campaign ROI and development progress?",
-    answer: "You receive a custom real-time client dashboard displaying live Google/Meta ad metrics, conversion funnels, sprint roadmaps, and direct access to your dedicated strategist."
+    question: "Do you work only with startups?",
+    answer: "No. We work with startups, small businesses, growing companies, and established brands across different industries. Whether you are launching your first product or expanding an existing business we create solutions that fit your stage of growth."
   },
   {
-    question: "Can you help optimize our marketing funnels & conversion rate?",
-    answer: "Yes! We audit existing traffic funnels, build high-converting landing page variants, run A/B copy tests, and fine-tune ad attribution to maximize overall campaign conversion rate."
+    question: "Do you offer customized marketing strategies?",
+    answer: "Yes. Every business is unique so we never rely on generic marketing plans. We develop customized strategies based on your industry target audience, competitors and business objectives to help you achieve sustainable growth."
   }
 ];
 

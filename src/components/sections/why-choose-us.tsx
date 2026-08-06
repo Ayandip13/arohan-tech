@@ -57,13 +57,13 @@ export function WhyChooseUs() {
 
             <Reveal>
               <h2 className="text-3xl md:text-5xl font-heading font-black tracking-tight leading-tight">
-                Why Top Brands Partner With <span className="gradient-text-coral-amber">Aarohan.</span>
+                Why Every Brands <span className="gradient-text-coral-amber">Choose Us.</span>
               </h2>
             </Reveal>
 
             <FadeIn delay={0.2}>
               <p className="text-sm md:text-base text-muted-foreground leading-relaxed max-w-md">
-                We aren't just another service provider. We act as an inline growth engine, integrating deeply with your brand to unlock exponential revenue.
+                We are not a conventional marketing agency. We are your long-term growth partner embedded in your brand, driven by your vision, and committed to building lasting impact. From strategy to execution, we stay the course until your brand commands the spotlight and earns the recognition it deserves.
               </p>
             </FadeIn>
 

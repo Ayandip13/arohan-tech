@@ -39,8 +39,8 @@ export function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? "py-3 glass border-b border-primary/20 shadow-lg shadow-primary/5"
-          : "py-6 bg-transparent"
+        ? "py-3 glass border-b border-primary/20 shadow-lg shadow-primary/5"
+        : "py-6 bg-transparent"
         }`}
     >
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
@@ -59,9 +59,6 @@ export function Navbar() {
             <span className="font-heading font-extrabold text-lg md:text-xl tracking-tight leading-none group-hover:text-primary transition-colors">
               Aarohan Tech Solutions<span className="text-amber-500">.</span>
             </span>
-            <span className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground">
-              Creative Agency
-            </span>
           </div>
         </Link>
 
@@ -75,8 +72,8 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   className={`relative px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${isActive
-                      ? "text-white bg-gradient-to-r from-rose-500 to-amber-500 shadow-md shadow-rose-500/25"
-                      : "text-foreground/80 hover:text-primary hover:bg-primary/5"
+                    ? "text-white bg-gradient-to-r from-rose-500 to-amber-500 shadow-md shadow-rose-500/25"
+                    : "text-foreground/80 hover:text-primary hover:bg-primary/5"
                     }`}
                 >
                   {link.name}
@@ -157,8 +154,8 @@ export function Navbar() {
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className={`text-lg font-bold py-3 px-4 rounded-2xl transition-all flex items-center justify-between ${isActive
-                          ? "bg-gradient-to-r from-rose-500 to-amber-500 text-white shadow-lg"
-                          : "text-foreground hover:bg-primary/10 hover:text-primary"
+                        ? "bg-gradient-to-r from-rose-500 to-amber-500 text-white shadow-lg"
+                        : "text-foreground hover:bg-primary/10 hover:text-primary"
                         }`}
                     >
                       <span>{link.name}</span>

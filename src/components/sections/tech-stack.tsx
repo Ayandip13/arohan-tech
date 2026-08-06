@@ -4,16 +4,16 @@ import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Reveal } from "@/components/animations/reveal";
-import { 
-  PhoneCall, 
-  FileText, 
-  Search, 
-  Map, 
-  Palette, 
-  Rocket, 
-  CheckCircle2, 
-  Eye, 
-  Send, 
+import {
+  PhoneCall,
+  FileText,
+  Search,
+  Map,
+  Palette,
+  Rocket,
+  CheckCircle2,
+  Eye,
+  Send,
   TrendingUp,
   Sparkles
 } from "lucide-react";
@@ -25,7 +25,7 @@ const workflowSteps = [
     title: "Discovery Call",
     subtitle: "Understanding your vision & growth goals",
     desc: "We initiate a deep-dive alignment session to map your business targets, target audience personas, budget, and competitive positioning.",
-    icon: <PhoneCall className="w-5 h-5 text-rose-500" />,
+    icon: <PhoneCall className="w-5 h-5 text-white" />,
     color: "from-rose-500 to-amber-500",
     deliverables: ["Growth Goals Blueprint", "Audience Analysis", "Project Scope"]
   },
@@ -34,7 +34,7 @@ const workflowSteps = [
     title: "Requirement Analysis",
     subtitle: "Auditing & defining exact project KPIs",
     desc: "Our strategists analyze your existing marketing funnels, website analytics, and technical infrastructure to locate friction points.",
-    icon: <FileText className="w-5 h-5 text-amber-500" />,
+    icon: <FileText className="w-5 h-5 text-white" />,
     color: "from-amber-400 to-rose-500",
     deliverables: ["Funnels Audit Report", "KPI Definition", "Technical Requirements"]
   },
@@ -43,7 +43,7 @@ const workflowSteps = [
     title: "Research & Strategy",
     subtitle: "Data-driven growth & brand roadmap",
     desc: "We conduct market research, competitor benchmarking, and channel selection to engineer an unbeatable ROI strategy.",
-    icon: <Search className="w-5 h-5 text-purple-500" />,
+    icon: <Search className="w-5 h-5 text-white" />,
     color: "from-purple-600 to-rose-500",
     deliverables: ["Competitor Benchmarks", "Channel Strategy", "Campaign Messaging"]
   },
@@ -52,7 +52,7 @@ const workflowSteps = [
     title: "Planning & Architecture",
     subtitle: "Sprint milestones & content calendar",
     desc: "We map out content calendars, ad budgets, UX wireframes, and project sprint milestones for crystal-clear execution.",
-    icon: <Map className="w-5 h-5 text-emerald-500" />,
+    icon: <Map className="w-5 h-5 text-white" />,
     color: "from-emerald-400 to-sky-500",
     deliverables: ["Content Calendar", "Wireframes Map", "Sprint Schedule"]
   },
@@ -61,7 +61,7 @@ const workflowSteps = [
     title: "Design & Content",
     subtitle: "Crafting iconic visuals & viral copy",
     desc: "Our creative studio designs high-converting ad creative, brand identity systems, landing page UI/UX, and compelling copy.",
-    icon: <Palette className="w-5 h-5 text-rose-500" />,
+    icon: <Palette className="w-5 h-5 text-white" />,
     color: "from-rose-500 to-amber-500",
     deliverables: ["Ad Creatives Suite", "UI/UX Mockups", "High-Converting Copy"]
   },
@@ -70,7 +70,7 @@ const workflowSteps = [
     title: "Development / Campaign Setup",
     subtitle: "Building platforms & ad infrastructure",
     desc: "Engineers develop responsive web apps while growth marketers build Meta/Google ad structures and analytics tracking pixels.",
-    icon: <Rocket className="w-5 h-5 text-sky-500" />,
+    icon: <Rocket className="w-5 h-5 text-white" />,
     color: "from-sky-500 to-purple-600",
     deliverables: ["Web Application", "Pixel & Event Tracking", "Ad Campaign Structure"]
   },
@@ -79,7 +79,7 @@ const workflowSteps = [
     title: "Testing & Quality Assurance",
     subtitle: "Performance & conversion verification",
     desc: "Rigorously testing page speed, cross-device responsiveness, attribution tracking, and creative ad variations before spend opens.",
-    icon: <CheckCircle2 className="w-5 h-5 text-emerald-500" />,
+    icon: <CheckCircle2 className="w-5 h-5 text-white" />,
     color: "from-emerald-400 to-rose-500",
     deliverables: ["PageSpeed 95+ Audit", "Attribution Test", "Multi-Device QA"]
   },
@@ -88,7 +88,7 @@ const workflowSteps = [
     title: "Client Review & Feedback",
     subtitle: "Collaborative refinement & approval",
     desc: "We present complete creative assets and campaign setups for client walkthrough, feedback iterations, and final sign-off.",
-    icon: <Eye className="w-5 h-5 text-amber-500" />,
+    icon: <Eye className="w-5 h-5 text-white" />,
     color: "from-amber-400 to-purple-600",
     deliverables: ["Client Walkthrough", "Final Iterations", "Launch Approval"]
   },
@@ -97,7 +97,7 @@ const workflowSteps = [
     title: "Launch & Campaign Go-Live",
     subtitle: "Pushing the button & scaling reach",
     desc: "Official rollout of web platforms and activation of paid social & search campaigns with real-time analytics monitoring.",
-    icon: <Send className="w-5 h-5 text-rose-500" />,
+    icon: <Send className="w-5 h-5 text-white" />,
     color: "from-rose-500 to-emerald-400",
     deliverables: ["Platform Go-Live", "Live Paid Ad Launch", "Realtime Dashboard"]
   },
@@ -106,7 +106,7 @@ const workflowSteps = [
     title: "Optimization & Scale",
     subtitle: "Continuous A/B testing & max ROI growth",
     desc: "Ongoing weekly growth sprints, ad creative refreshes, conversion rate optimization (CRO), and scaling ad budgets for peak ROI.",
-    icon: <TrendingUp className="w-5 h-5 text-amber-400" />,
+    icon: <TrendingUp className="w-5 h-5 text-white" />,
     color: "from-amber-400 to-rose-500",
     deliverables: ["Weekly Growth Sprints", "Creative Refreshes", "Scale Analytics"]
   }
@@ -114,11 +114,11 @@ const workflowSteps = [
 
 export function TechStack() {
   const containerRef = useRef<HTMLDivElement>(null);
-  
+
   // Track scroll progress inside section for vertical line fill
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 80%", "end 20%"]
+    offset: ["start 40%", "end 50%"]
   });
 
   const scaleY = useSpring(scrollYProgress, {
@@ -128,8 +128,8 @@ export function TechStack() {
   });
 
   return (
-    <section 
-      ref={containerRef} 
+    <section
+      ref={containerRef}
       className="py-28 bg-card/60 relative overflow-hidden border-y border-rose-500/15"
       id="workflow"
     >
@@ -137,7 +137,7 @@ export function TechStack() {
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-rose-500/10 rounded-full blur-[180px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <FadeIn>
@@ -163,10 +163,10 @@ export function TechStack() {
 
         {/* Interactive Vertical Timeline */}
         <div className="relative max-w-4xl mx-auto px-2 md:px-0">
-          
+
           {/* Animated Progressive Vertical Progress Line */}
           <div className="absolute left-6 md:left-1/2 top-4 bottom-4 w-1 bg-border/60 -translate-x-1/2 rounded-full" />
-          <motion.div 
+          <motion.div
             style={{ scaleY }}
             className="absolute left-6 md:left-1/2 top-4 bottom-4 w-1.5 bg-gradient-to-b from-rose-500 via-amber-400 to-purple-600 -translate-x-1/2 rounded-full origin-top z-10 shadow-[0_0_15px_rgba(244,63,94,0.6)]"
           />
@@ -179,11 +179,11 @@ export function TechStack() {
               return (
                 <FadeIn key={idx} delay={0.05 * idx}>
                   <div className={`flex flex-col md:flex-row items-center gap-6 ${isEven ? "md:flex-row-reverse" : ""}`}>
-                    
+
                     {/* Step Card */}
                     <div className="w-full md:w-[calc(50%-2.5rem)] pl-12 md:pl-0">
                       <div className="group rounded-3xl p-6 bg-background border-2 border-border/80 hover:border-rose-500/50 shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
-                        
+
                         {/* Top Badge & Number */}
                         <div className="flex items-center justify-between mb-4">
                           <div className="flex items-center gap-2.5">

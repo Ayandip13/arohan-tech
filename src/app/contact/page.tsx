@@ -43,11 +43,11 @@ export default function ContactPage() {
                         <MapPin className="w-5 h-5" />
                       </div>
                       <div>
-                        <h3 className="font-bold mb-1 text-lg">Global Headquarters</h3>
+                        <h3 className="font-bold mb-1 text-lg">Our Office</h3>
                         <p className="text-muted-foreground leading-relaxed">
-                          100 Innovation Drive<br />
-                          Suite 400<br />
-                          Tech District, NY 10001
+                          61 Subhas Nagar<br />
+                          Baranagar<br />
+                          Kolkata 700090
                         </p>
                       </div>
                     </div>
@@ -60,8 +60,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="font-bold mb-1 text-lg">Email Us</h3>
-                        <p className="text-muted-foreground mb-1">hello@aarohantech.com</p>
-                        <p className="text-muted-foreground">careers@aarohantech.com</p>
+                        <p className="text-muted-foreground mb-1">contact@aarohantechsolutions.in</p>
                       </div>
                     </div>
                   </FadeIn>
@@ -73,8 +72,8 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <h3 className="font-bold mb-1 text-lg">Call Us</h3>
-                        <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                        <p className="text-sm text-muted-foreground/70 mt-1">Mon-Fri, 9am - 6pm EST</p>
+                        <p className="text-muted-foreground">+91 62907 17007</p>
+                        <p className="text-sm text-muted-foreground/70 mt-1">Mon-Sat, 10am - 7pm IST</p>
                       </div>
                     </div>
                   </FadeIn>

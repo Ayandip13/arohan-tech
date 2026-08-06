@@ -6,25 +6,23 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqData = [
   {
-    category: "Services & Capabilities",
+    category: "Why Aarohan Tech Solutions",
     items: [
-      { q: "Do you offer web and mobile application development?", a: "Yes! We build high-performance web applications, mobile apps, and custom software platforms using Next.js, React, Node.js, and TypeScript." },
-      { q: "What is your approach to digital marketing?", a: "We take a data-driven approach, combining high-converting creative ad design, SEO, social virality, and automated growth funnels to maximize client ROI." },
-      { q: "Do you manage web performance & Cloud infrastructure?", a: "Absolutely. We architect, deploy, and manage high-speed web apps and cloud environments on AWS and Vercel." }
+      { q: "Why should I choose Aarohan Tech Solutions?", a: "At Aarohan Tech Solutions we believe in building partnerships not just delivering services. We combine creativity, strategy, technology and data to create solutions that drive real business growth. From the first idea to long term scaling, we work alongside you to help your brand stand out and succeed." },
+      { q: "What makes Aarohan Tech Solutions different?", a: "We are not a typical marketing agency. We take the time to understand your business, your audience and your vision before creating a strategy. Our focus is on measurable growth, creative storytelling and building brands that leave a lasting impression." }
     ]
   },
   {
-    category: "Pricing & Retainers",
+    category: "Services & Strategies",
     items: [
-      { q: "How do you structure your pricing?", a: "We offer project-based contracts for branding & software builds, performance retainers for marketing & SEO, and dedicated team retainers for enterprise clients." },
-      { q: "Are there minimum contract lengths?", a: "For ongoing marketing campaigns or engineering squads, we typically recommend a 3-month engagement to ensure measurable impact." }
+      { q: "What services does Aarohan Tech Solutions offer?", a: "We offer branding, website design and development, SEO, social media marketing, performance marketing, Google Ads, Meta Ads, content creation, UI and UX design, graphic design, video editing, analytics and complete digital marketing solutions tailored to your business goals." },
+      { q: "Do you offer customized marketing strategies?", a: "Yes. Every business is unique so we never rely on generic marketing plans. We develop customized strategies based on your industry target audience, competitors and business objectives to help you achieve sustainable growth." }
     ]
   },
   {
-    category: "Onboarding & Process",
+    category: "Who We Work With",
     items: [
-      { q: "What is your onboarding timeline?", a: "Onboarding takes less than 48 hours. We set up shared Slack channels, establish real-time analytics dashboards, and launch sprint planning." },
-      { q: "Will I have a dedicated growth lead?", a: "Yes, every client receives a dedicated Lead Strategist and Project Engineer for direct, real-time communication." }
+      { q: "Do you work only with startups?", a: "No. We work with startups, small businesses, growing companies, and established brands across different industries. Whether you are launching your first product or expanding an existing business we create solutions that fit your stage of growth." }
     ]
   }
 ];
