@@ -8,12 +8,74 @@ import { ReadingProgress } from "@/components/ui/reading-progress";
 import { ChevronLeft, Clock, Calendar, Link2, ChevronRight, ArrowRight } from "lucide-react";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "The Future of Cloud Computing | Aarohan Tech Solution",
-  description: "How modern enterprises scale effortlessly using serverless architectures and distributed computing.",
-};
+const blogsData = [
+  {
+    slug: "scaling-ecommerce-sales",
+    title: "How We Scaled E-Commerce Sales by 420% With TikTok & Meta Ads",
+    category: "Digital Marketing",
+    readTime: "5 min read",
+    date: "Jul 18, 2026",
+    author: "James Carter",
+    excerpt: "Why creative ad variations and first-party pixel tracking out-perform static budget increases in today's ad auctions.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
+    tagBg: "bg-orange-500/15 text-orange-600 dark:text-orange-400",
+  },
+  {
+    slug: "ai-marketing-playbook",
+    title: "The 2026 AI Playbook: Building Custom Agents For Marketing",
+    category: "AI & Automation",
+    readTime: "7 min read",
+    date: "Jul 12, 2026",
+    author: "Dr. Elena Rostova",
+    excerpt: "How forward-thinking brands automate lead qualification, ad copywriting, and CRM nurturing with custom LLM pipelines.",
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000&auto=format&fit=crop",
+    tagBg: "bg-teal-500/15 text-teal-700 dark:text-teal-400",
+  },
+  {
+    slug: "high-converting-brand-identities",
+    title: "Why High-Converting Digital Brands Ditch Generic Templates",
+    category: "Brand Strategy",
+    readTime: "6 min read",
+    date: "Jul 05, 2026",
+    author: "Sophia Lin",
+    excerpt: "Generic SaaS templates kill conversions. Here is how custom motion design and vibrant storytelling convert 3x better.",
+    image: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000&auto=format&fit=crop",
+    tagBg: "bg-purple-500/15 text-purple-600 dark:text-purple-400",
+  },
+  {
+    slug: "optimizing-nextjs-performance",
+    title: "Building Sub-Second Next.js Web Platforms For Scale",
+    category: "Software Dev",
+    readTime: "4 min read",
+    date: "Jun 28, 2026",
+    author: "Alex Mercer",
+    excerpt: "A deep dive into server components, edge caching, and micro-animations that make web apps feel instantaneous.",
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop",
+    tagBg: "bg-emerald-500/15 text-emerald-700 dark:text-emerald-400",
+  }
+];
 
-export default function BlogDetailPage() {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const blog = blogsData.find((b) => b.slug === resolvedParams.slug);
+  return {
+    title: blog ? `${blog.title} | Aarohan Tech Solution` : "Blog | Aarohan Tech Solution",
+    description: blog?.excerpt || "Read our latest insights.",
+  };
+}
+
+export default async function BlogDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
+  const blog = blogsData.find((b) => b.slug === resolvedParams.slug);
+
+  if (!blog) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <h1 className="text-4xl font-heading font-bold">Blog not found</h1>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Navbar />
@@ -28,22 +90,22 @@ export default function BlogDetailPage() {
 
             <FadeIn>
               <div className="flex flex-wrap items-center gap-4 mb-6">
-                <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider rounded-full">Cloud</span>
-                <span className="text-sm text-muted-foreground flex items-center gap-1"><Clock className="w-4 h-4" /> 5 min read</span>
-                <span className="text-sm text-muted-foreground flex items-center gap-1"><Calendar className="w-4 h-4" /> Oct 24, 2025</span>
+                <span className={`px-3 py-1 text-xs font-bold uppercase tracking-wider rounded-full ${blog.tagBg}`}>{blog.category}</span>
+                <span className="text-sm text-muted-foreground flex items-center gap-1"><Clock className="w-4 h-4" /> {blog.readTime}</span>
+                <span className="text-sm text-muted-foreground flex items-center gap-1"><Calendar className="w-4 h-4" /> {blog.date}</span>
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold leading-tight mb-8">
-                The Future of Cloud Computing in Enterprise Software
+                {blog.title}
               </h1>
 
               <div className="flex items-center gap-4 mb-12">
                 <div className="w-12 h-12 rounded-full bg-muted overflow-hidden relative">
-                  <Image src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop" fill alt="Dr. Elena Rostova" className="object-cover" />
+                  <Image src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop" fill alt={blog.author} className="object-cover" />
                 </div>
                 <div>
-                  <p className="font-bold">Dr. Elena Rostova</p>
-                  <p className="text-sm text-muted-foreground">Chief Technology Officer</p>
+                  <p className="font-bold">{blog.author}</p>
+                  <p className="text-sm text-muted-foreground">Aarohan Contributor</p>
                 </div>
               </div>
             </FadeIn>
@@ -55,8 +117,8 @@ export default function BlogDetailPage() {
           <div className="container mx-auto px-4 md:px-8 max-w-5xl mb-16">
             <div className="relative aspect-[21/9] w-full rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1600&auto=format&fit=crop"
-                alt="Cloud Computing"
+                src={blog.image}
+                alt={blog.title}
                 fill
                 className="object-cover"
               />
@@ -108,12 +170,12 @@ export default function BlogDetailPage() {
             {/* Content */}
             <div className="flex-1 prose prose-lg dark:prose-invert max-w-none">
               <p className="lead text-xl md:text-2xl text-muted-foreground mb-8">
-                As enterprises globally seek greater agility and resilience, traditional monolithic infrastructures are giving way to advanced, highly distributed cloud models. Here's what engineering leaders need to know.
+                {blog.excerpt}
               </p>
 
-              <h2 id="serverless">The Shift to Serverless Microservices</h2>
+              <h2 id="serverless">Introduction</h2>
               <p>
-                For years, companies built large, monolithic applications because they were simple to deploy. However, as scaling requirements grew, the limitations became apparent. Today, the migration towards serverless microservices allows organizations to scale individual functions independently without provisioning underlying servers.
+                In the rapidly evolving landscape of digital growth, understanding the mechanics behind these strategies is crucial. Our team has deeply analyzed the core patterns that drive actual results.
               </p>
 
               <h3 id="benefits">Key Benefits of Serverless</h3>
