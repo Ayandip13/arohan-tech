@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { Menu, X, Search, Sparkles, ArrowUpRight } from "lucide-react";
@@ -43,17 +44,20 @@ export function Navbar() {
         }`}
     >
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
-        {/* Creative Logo Placeholder */}
+        {/* Creative Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-rose-500 via-amber-400 to-purple-600 p-[2px] shadow-lg shadow-rose-500/20 group-hover:scale-105 transition-transform duration-300 flex items-center justify-center">
-            <div className="w-full h-full bg-background rounded-[14px] flex items-center justify-center text-foreground font-heading font-extrabold text-xs tracking-wider border border-dashed border-primary/40">
-              {/* TODO: Replace this div with an Image component for Aarohan Logo */}
-              <span>LOGO</span>
-            </div>
+          <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+            <Image
+              src="/aarohan.png"
+              alt="Aarohan Tech Solutions Logo"
+              width={56}
+              height={56}
+              className="w-full h-full object-contain"
+            />
           </div>
           <div className="flex flex-col">
-            <span className="font-heading font-extrabold text-xl tracking-tight leading-none group-hover:text-primary transition-colors">
-              Aarohan<span className="text-amber-500">.</span>
+            <span className="font-heading font-extrabold text-lg md:text-xl tracking-tight leading-none group-hover:text-primary transition-colors">
+              Aarohan Tech Solutions<span className="text-amber-500">.</span>
             </span>
             <span className="text-[10px] uppercase font-bold tracking-widest text-muted-foreground">
               Creative Agency

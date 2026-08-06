@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight, Sparkles, ArrowUp, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -42,14 +43,17 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div className="lg:col-span-2 space-y-5">
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-rose-500 via-amber-400 to-purple-600 p-[2px] shadow-lg shadow-rose-500/20 flex items-center justify-center">
-                <div className="w-full h-full bg-background rounded-[14px] flex items-center justify-center text-foreground font-heading font-extrabold text-xs tracking-wider border border-dashed border-primary/40">
-                  {/* TODO: Replace this div with an Image component for Aarohan Logo */}
-                  <span>LOGO</span>
-                </div>
+              <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                <Image
+                  src="/aarohan.png"
+                  alt="Aarohan Tech Solutions Logo"
+                  width={56}
+                  height={56}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-heading font-extrabold text-2xl tracking-tight">
-                Aarohan<span className="text-amber-500">.</span>
+                Aarohan Tech Solutions<span className="text-amber-500">.</span>
               </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-sm">
