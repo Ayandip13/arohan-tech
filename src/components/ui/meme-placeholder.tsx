@@ -9,6 +9,7 @@ interface MemePlaceholderProps {
   title?: string;
   caption?: string;
   tag?: string;
+  videoSrc?: string;
   variant?: "rose" | "amber" | "purple" | "emerald";
   className?: string;
 }
@@ -17,6 +18,7 @@ export function MemePlaceholderCard({
   title = "[Insert Hilarious Client vs Agency Meme Here]",
   caption = "When the client approves the first draft without any changes... 🤯",
   tag = "Agency Humour Corner",
+  videoSrc = "",
   variant = "rose",
   className = "",
 }: MemePlaceholderProps) {
@@ -56,7 +58,7 @@ export function MemePlaceholderCard({
   return (
     <div className={`py-6 flex justify-center px-4 ${className}`}>
       <div
-        className={`relative w-full max-w-xl rounded-3xl p-5 border-2 ${style.border} ${style.bg} backdrop-blur-md shadow-lg transition-all duration-300 hover:scale-[1.01]`}
+        className={`relative w-full max-w-2xl rounded-3xl p-5 md:p-6 border-2 ${style.border} ${style.bg} backdrop-blur-md shadow-lg transition-all duration-300 hover:scale-[1.01]`}
       >
         {/* Floating Top Sticker */}
         <div className="absolute -top-3.5 right-6 z-10">
@@ -67,31 +69,45 @@ export function MemePlaceholderCard({
           </FunkySticker>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center gap-4">
-          {/* SVG Graphic Image Placeholder Box */}
-          <div
-            className={`w-full sm:w-36 h-28 shrink-0 rounded-2xl ${style.accentBg} border-2 border-dashed ${style.border} flex flex-col items-center justify-center p-3 text-center relative overflow-hidden group`}
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent pointer-events-none" />
-            <ImageIcon className={`w-8 h-8 ${style.iconColor} mb-1 opacity-75 group-hover:scale-110 transition-transform`} />
-            <span className="text-[10px] font-extrabold text-muted-foreground tracking-wider uppercase">
-              Meme Placeholder
-            </span>
-          </div>
+        <div className="flex flex-col sm:flex-row items-center gap-6">
+          {/* Video or Image Media / Placeholder Box */}
+          {videoSrc ? (
+            <div className="w-full sm:w-60 md:w-64 max-h-[360px] shrink-0 rounded-2xl overflow-hidden shadow-xl border-2 border-rose-500/30 bg-black/80 relative flex items-center justify-center">
+              <video
+                src={videoSrc}
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls
+                className="w-full max-h-[360px] h-auto object-contain rounded-2xl"
+              />
+            </div>
+          ) : (
+            <div
+              className={`w-full sm:w-36 h-28 shrink-0 rounded-2xl ${style.accentBg} border-2 border-dashed ${style.border} flex flex-col items-center justify-center p-3 text-center relative overflow-hidden group`}
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent pointer-events-none" />
+              <ImageIcon className={`w-8 h-8 ${style.iconColor} mb-1 opacity-75 group-hover:scale-110 transition-transform`} />
+              <span className="text-[10px] font-extrabold text-muted-foreground tracking-wider uppercase">
+                Meme Placeholder
+              </span>
+            </div>
+          )}
 
           {/* Text & Caption */}
-          <div className="flex-1 space-y-1.5 text-center sm:text-left">
+          <div className="flex-1 space-y-2.5 text-center sm:text-left">
             <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-background/80 text-foreground font-extrabold text-[11px] border border-border/80">
               <Smile className={`w-3.5 h-3.5 ${style.iconColor}`} />
               <span>Agency Reality Check</span>
             </div>
 
-            <h5 className="font-heading font-black text-sm md:text-base text-foreground leading-snug">
+            <h5 className="font-heading font-black text-base md:text-lg text-foreground leading-snug">
               {title}
             </h5>
 
-            <p className="text-xs text-muted-foreground font-medium italic leading-relaxed">
-              "{caption}"
+            <p className="text-sm md:text-base text-foreground/90 font-semibold leading-relaxed">
+              {caption}
             </p>
           </div>
         </div>

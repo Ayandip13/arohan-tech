@@ -24,8 +24,9 @@ export default function Home() {
 
         {/* Agency Humour Corner */}
         <MemePlaceholderCard
-          title="Client: 'Can we make the logo bigger & add 15 more popups?'"
-          caption="Our UI team taking a deep breath before saving the conversion rate... ☕"
+          title="Client: Why should I choose Aarohan?"
+          caption="Agency: Because we'd rather grow your brand than just your invoice 😭"
+          videoSrc="/InShot_20260806_134738594.mp4"
           variant="rose"
         />
 
