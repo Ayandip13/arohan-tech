@@ -95,7 +95,6 @@ export function Footer() {
             <h3 className="font-heading font-extrabold text-foreground mb-4 text-base">Company</h3>
             <ul className="flex flex-col gap-2.5 font-medium text-xs">
               <li><Link href="/about" className="text-muted-foreground hover:text-rose-500 transition-colors">About Our Agency</Link></li>
-              <li><Link href="/work" className="text-muted-foreground hover:text-rose-500 transition-colors">Featured Work</Link></li>
               <li><Link href="/careers" className="text-muted-foreground hover:text-rose-500 transition-colors inline-flex items-center">Join Our Team <span className="ml-2 text-[9px] font-black uppercase tracking-wider bg-rose-500/10 text-rose-500 py-0.5 px-1.5 rounded-full">Hiring</span></Link></li>
               <li><Link href="/blog" className="text-muted-foreground hover:text-rose-500 transition-colors">Our Blog</Link></li>
               <li><Link href="/faq" className="text-muted-foreground hover:text-rose-500 transition-colors">FAQ & Process</Link></li>
