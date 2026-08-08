@@ -25,7 +25,7 @@ export default function Home() {
         {/* Agency Humour Corner */}
         <MemePlaceholderCard
           title="Client: Why should I choose Aarohan?"
-          caption="Agency: Because we'd rather grow your brand than just your invoice 😭"
+          caption="Us: Because we'd rather grow your brand than just your invoice 😭"
           videoSrc="/InShot_20260806_134738594.mp4"
           variant="rose"
         />
