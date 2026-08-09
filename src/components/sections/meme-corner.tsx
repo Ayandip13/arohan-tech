@@ -95,7 +95,7 @@ export function MemeCornerSection() {
   return (
     <section className="py-24 bg-card/30 relative overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 max-w-full w-[400px] h-[400px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         

@@ -10,8 +10,8 @@ export function FinalCTA() {
   return (
     <section className="relative py-24 overflow-hidden bg-gradient-to-r from-rose-600 via-amber-500 to-purple-700 text-white">
       {/* Ambient background glow */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/20 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-900/40 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-0 right-0 max-w-full w-[500px] h-[500px] bg-white/20 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 max-w-full w-[500px] h-[500px] bg-purple-900/40 rounded-full blur-[140px] pointer-events-none" />
 
       {/* Floating Sticker Badges */}
       <div className="absolute top-8 left-8 hidden lg:flex items-center gap-2 px-4 py-2 rounded-full bg-white text-slate-950 font-black text-xs shadow-2xl animate-float">

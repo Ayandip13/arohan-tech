@@ -5,7 +5,7 @@ import { Settings, Home } from "lucide-react";
 export default function MaintenancePage() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-background p-4 text-center">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-full w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
       
       <div className="relative z-10 glass p-12 md:p-16 rounded-3xl border border-border/50 max-w-xl w-full shadow-2xl">
         <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-8 relative">

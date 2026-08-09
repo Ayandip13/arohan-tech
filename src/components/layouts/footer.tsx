@@ -15,8 +15,8 @@ export function Footer() {
   return (
     <footer className="relative bg-card/60 border-t border-rose-500/20 overflow-hidden pt-20 pb-12">
       {/* Background ambient light */}
-      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-rose-500/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 left-1/4 max-w-full w-[500px] h-[500px] bg-rose-500/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 max-w-full w-[400px] h-[400px] bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         {/* Massive Agency Callout */}

@@ -59,8 +59,8 @@ export function ServicesPreview() {
   return (
     <section className="py-28 lg:py-36 relative bg-background overflow-hidden" id="services">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-rose-500/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-10 right-0 w-[400px] h-[400px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 max-w-full w-[400px] h-[400px] bg-rose-500/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-10 right-0 max-w-full w-[400px] h-[400px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         

@@ -19,7 +19,7 @@ export function IndustriesSection() {
   return (
     <section className="py-24 bg-background relative overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 right-10 w-[450px] h-[450px] bg-rose-500/10 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/2 right-10 max-w-full w-[450px] h-[450px] bg-rose-500/10 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         

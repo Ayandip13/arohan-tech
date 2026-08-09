@@ -18,11 +18,11 @@ const testimonials = [
   },
   {
     quote: "The combination of high-converting creative ad campaigns and high-speed web platforms built by Aarohan cut our customer acquisition costs by half.",
-    name: "Matrik Saha",
-    role: "Founder, Elevate Commerce",
+    name: "Ayandip Paul",
+    role: "Founder, Bookmart India",
     impact: "50% CAC Reduction",
     rating: 5,
-    initials: "MS",
+    initials: "AP",
     color: "from-amber-500/10 to-rose-500/10",
   },
   {
@@ -58,7 +58,7 @@ export function TestimonialsSection() {
   return (
     <section className="py-24 bg-card/40 overflow-hidden relative">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 left-0 w-[450px] h-[450px] bg-rose-500/10 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/3 left-0 max-w-full w-[450px] h-[450px] bg-rose-500/10 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 mb-12">
         <FadeIn>
@@ -85,7 +85,7 @@ export function TestimonialsSection() {
             {testimonials.map((t, idx) => (
               <motion.div
                 key={idx}
-                className="w-[320px] md:w-[400px] p-6 md:p-7 rounded-3xl bg-background border-2 border-border/80 hover:border-rose-500/50 shadow-lg flex-shrink-0 flex flex-col justify-between"
+                className="max-w-[calc(100vw-2rem)] w-[320px] md:w-[400px] p-6 md:p-7 rounded-3xl bg-background border-2 border-border/80 hover:border-rose-500/50 shadow-lg flex-shrink-0 flex flex-col justify-between"
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.2 }}
               >

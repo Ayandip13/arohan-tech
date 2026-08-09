@@ -36,7 +36,7 @@ export function FAQSection() {
   return (
     <section className="py-24 bg-card/50 relative overflow-hidden" id="faq">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 right-1/4 w-[450px] h-[450px] bg-rose-500/10 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/3 right-1/4 max-w-full w-[450px] h-[450px] bg-rose-500/10 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row gap-12">

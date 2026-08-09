@@ -41,7 +41,7 @@ export function WhyChooseUs() {
   return (
     <section className="py-28 lg:py-36 bg-card/40 relative overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-rose-500/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-0 right-1/4 max-w-full w-[400px] h-[400px] bg-rose-500/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">

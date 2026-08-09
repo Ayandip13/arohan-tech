@@ -51,7 +51,7 @@ export function FeaturedProjects() {
   return (
     <section className="py-28 lg:py-36 bg-card/30 relative overflow-hidden" id="work">
       {/* Background ambient glow */}
-      <div className="absolute top-1/4 right-0 w-[400px] h-[400px] bg-rose-500/10 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/4 right-0 max-w-full w-[400px] h-[400px] bg-rose-500/10 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         

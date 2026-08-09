@@ -48,7 +48,7 @@ export function OurProcess() {
   return (
     <section className="py-28 lg:py-36 bg-background relative overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 left-10 w-[400px] h-[400px] bg-rose-500/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 left-10 max-w-full w-[400px] h-[400px] bg-rose-500/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">

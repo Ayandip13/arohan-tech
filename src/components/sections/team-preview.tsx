@@ -37,7 +37,7 @@ export function TeamPreview() {
   return (
     <section className="py-28 lg:py-36 bg-background relative overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-rose-500/10 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/4 max-w-full w-[400px] h-[400px] bg-rose-500/10 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         

@@ -6,10 +6,10 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const stats = [
-  { value: 350, prefix: "+", suffix: "%", label: "Average Client ROI", emoji: "🚀" },
-  { value: 180, prefix: "", suffix: "+", label: "Global Campaigns & Builds", emoji: "🏆" },
-  { value: 120, prefix: "$", suffix: "M+", label: "Ad Spend Managed", emoji: "🔥" },
-  { value: 99, prefix: "", suffix: "%", label: "Client Satisfaction Rate", emoji: "🌟" },
+  { value: 210, prefix: "+", suffix: "%", label: "Average Client ROI", emoji: "🚀" },
+  { value: 220, prefix: "", suffix: "+", label: "Global Campaigns & Builds", emoji: "🏆" },
+  { value: 330, prefix: "₹", suffix: "K+", label: "Ad Spend Managed", emoji: "🔥" },
+  { value: 94, prefix: "", suffix: "%", label: "Conversion Rate", emoji: "🌟" },
 ];
 
 export function StatsSection() {
@@ -19,7 +19,7 @@ export function StatsSection() {
   return (
     <section className="py-20 bg-slate-950 text-white relative overflow-hidden" ref={ref}>
       {/* Background ambient lighting */}
-      <div className="absolute top-1/2 left-1/3 w-[500px] h-[500px] bg-rose-500/15 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/3 max-w-full w-[500px] h-[500px] bg-rose-500/15 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="rounded-3xl p-8 bg-white/5 border border-white/10 backdrop-blur-xl shadow-2xl">

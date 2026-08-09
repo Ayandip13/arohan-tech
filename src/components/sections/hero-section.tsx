@@ -12,8 +12,8 @@ export function HeroSection() {
   return (
     <section className="relative pt-24 md:pt-32 pb-24 md:pb-32 overflow-hidden gradient-bg-hero">
       {/* Soft Ambient Background Glows */}
-      <div className="absolute top-10 right-10 w-[450px] h-[450px] bg-rose-500/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-10 left-10 w-[350px] h-[350px] bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-10 right-10 max-w-full w-[450px] h-[450px] bg-rose-500/10 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-10 left-10 max-w-full w-[350px] h-[350px] bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
       
       {/* Floating Accent Doodles - Sparingly Placed */}
       <div className="absolute top-28 left-[6%] hidden xl:block pointer-events-none opacity-60">

@@ -16,8 +16,8 @@ export function PageHero({ title, description, badge, breadcrumbs }: PageHeroPro
   return (
     <section className="relative pt-40 pb-20 md:pt-48 md:pb-28 overflow-hidden bg-background">
       {/* Background ambient lighting */}
-      <div className="absolute top-0 right-0 w-[550px] h-[550px] bg-rose-500/15 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute top-1/2 left-0 w-[450px] h-[450px] bg-amber-500/15 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 right-0 max-w-full w-[550px] h-[550px] bg-rose-500/15 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 max-w-full w-[450px] h-[450px] bg-amber-500/15 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10 text-center flex flex-col items-center">
         {/* Breadcrumbs */}

@@ -134,7 +134,7 @@ export function TechStack() {
       id="workflow"
     >
       {/* Background ambient lighting */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-rose-500/10 rounded-full blur-[180px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 max-w-full w-[600px] h-[600px] bg-rose-500/10 rounded-full blur-[180px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
 
