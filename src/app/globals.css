@@ -406,7 +406,6 @@
 }
 
 .animate-hero-fade-in {
-  opacity: 0;
   animation: fadeInUpHero 0.6s cubic-bezier(0.21, 0.47, 0.32, 0.98) forwards;
 }
 
