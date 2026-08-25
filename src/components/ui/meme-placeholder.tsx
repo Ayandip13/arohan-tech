@@ -75,7 +75,7 @@ export function MemePlaceholderCard({
             <div className="w-full sm:w-60 md:w-64 max-h-[360px] shrink-0 rounded-2xl overflow-hidden shadow-xl border-2 border-rose-500/30 bg-black/80 relative flex items-center justify-center">
               <video
                 src={videoSrc}
-                autoPlay
+                preload="none"
                 loop
                 muted
                 playsInline

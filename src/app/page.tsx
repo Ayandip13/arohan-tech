@@ -1,15 +1,36 @@
 import { Navbar } from "@/components/layouts/navbar";
 import { Footer } from "@/components/layouts/footer";
 import { HeroSection } from "@/components/sections/hero-section";
-import { ServicesPreview } from "@/components/sections/services-preview";
-import { WhyChooseUs } from "@/components/sections/why-choose-us";
-import { OurProcess } from "@/components/sections/our-process";
-import { StatsSection } from "@/components/sections/stats-section";
-import { TestimonialsSection } from "@/components/sections/testimonials-section";
-import { TechStack } from "@/components/sections/tech-stack";
-import { FAQSection } from "@/components/sections/faq-section";
-import { FinalCTA } from "@/components/sections/final-cta";
-import { MemePlaceholderCard } from "@/components/ui/meme-placeholder";
+import dynamic from "next/dynamic";
+
+const ServicesPreview = dynamic(() =>
+  import("@/components/sections/services-preview").then((mod) => mod.ServicesPreview)
+);
+const WhyChooseUs = dynamic(() =>
+  import("@/components/sections/why-choose-us").then((mod) => mod.WhyChooseUs)
+);
+const OurProcess = dynamic(() =>
+  import("@/components/sections/our-process").then((mod) => mod.OurProcess)
+);
+const MemePlaceholderCard = dynamic(() =>
+  import("@/components/ui/meme-placeholder").then((mod) => mod.MemePlaceholderCard)
+);
+const StatsSection = dynamic(() =>
+  import("@/components/sections/stats-section").then((mod) => mod.StatsSection)
+);
+const TestimonialsSection = dynamic(() =>
+  import("@/components/sections/testimonials-section").then((mod) => mod.TestimonialsSection)
+);
+const TechStack = dynamic(() =>
+  import("@/components/sections/tech-stack").then((mod) => mod.TechStack)
+);
+const FAQSection = dynamic(() =>
+  import("@/components/sections/faq-section").then((mod) => mod.FAQSection)
+);
+const FinalCTA = dynamic(() =>
+  import("@/components/sections/final-cta").then((mod) => mod.FinalCTA)
+);
+
 
 export default function Home() {
   return (

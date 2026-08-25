@@ -52,6 +52,7 @@ export function Navbar() {
               width={56}
               height={56}
               className="w-full h-full object-contain"
+              priority
             />
           </div>
           <div className="flex flex-col">

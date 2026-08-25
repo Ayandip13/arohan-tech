@@ -1,8 +1,6 @@
 "use client";
 
 import { ArrowRight, Star, Megaphone } from "lucide-react";
-import { FadeIn } from "@/components/animations/fade-in";
-import { Reveal } from "@/components/animations/reveal";
 import { MagneticButton } from "@/components/animations/magnetic-button";
 import { FunkySticker, DoodleStar } from "@/components/ui/funky-elements";
 import { FunkyHeroCartoon } from "@/components/ui/funky-hero-cartoon";
@@ -27,7 +25,7 @@ export function HeroSection() {
           {/* Main Hero Content (7 Cols) */}
           <div className="lg:col-span-7 space-y-6 text-left max-w-2xl">
             
-            <FadeIn delay={0.1}>
+            <div className="animate-hero-fade-in animation-delay-100">
               <div className="flex flex-wrap items-center gap-3">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs uppercase tracking-widest border border-rose-500/20">
                   <Megaphone className="w-3.5 h-3.5 text-rose-500" />
@@ -37,10 +35,10 @@ export function HeroSection() {
                   <span>#1 ROI Boost 🚀</span>
                 </FunkySticker>
               </div>
-            </FadeIn>
+            </div>
 
             {/* Hero Heading */}
-            <Reveal delay={0.2}>
+            <div className="animate-hero-fade-in animation-delay-200">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-black tracking-tight leading-[1.14] text-foreground">
                 We Craft Bold Brands &{" "}
                 <span className="relative inline-block gradient-text-coral-amber">
@@ -48,17 +46,17 @@ export function HeroSection() {
                   <span className="absolute -bottom-1 left-0 w-full h-2 bg-amber-400/30 rounded-full -z-10" />
                 </span>
               </h1>
-            </Reveal>
+            </div>
 
             {/* Hero Subtext - Clean Rhythm & Max Width */}
-            <FadeIn delay={0.3}>
+            <div className="animate-hero-fade-in animation-delay-300">
               <p className="text-base sm:text-lg text-muted-foreground font-normal leading-relaxed max-w-lg">
                 High-energy digital marketing crafting unforgettable social campaigns, performance ad strategy, brand identity, and high-converting web experiences.
               </p>
-            </FadeIn>
+            </div>
 
             {/* Clean CTA Group */}
-            <FadeIn delay={0.4}>
+            <div className="animate-hero-fade-in animation-delay-400">
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <Link href="/contact">
                   <MagneticButton variant="gradient" size="default" className="rounded-full shadow-xl shadow-rose-500/20 px-7 font-extrabold text-sm">
@@ -73,10 +71,10 @@ export function HeroSection() {
                   </MagneticButton>
                 </Link>
               </div>
-            </FadeIn>
+            </div>
 
             {/* Social Proof Bar */}
-            <FadeIn delay={0.5}>
+            <div className="animate-hero-fade-in animation-delay-500">
               <div className="flex flex-wrap items-center gap-4 pt-4 border-t border-border/50">
                 <div className="flex items-center gap-2">
                   <div className="flex text-amber-400">
@@ -88,14 +86,14 @@ export function HeroSection() {
                   <span className="text-sm text-muted-foreground">• Trusted by 180+ top growth brands</span>
                 </div>
               </div>
-            </FadeIn>
+            </div>
           </div>
 
           {/* Right Column: Funky Cartoon Avatar Visual (5-col) */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <FadeIn delay={0.3} className="w-full">
+            <div className="w-full animate-hero-fade-in animation-delay-300">
               <FunkyHeroCartoon />
-            </FadeIn>
+            </div>
           </div>
 
         </div>
