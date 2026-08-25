@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Careers & Open Roles | Aarohan Creative Marketing Agency",
-  description: "Join our team of creative strategists, brand designers, and web developers at Aarohan.",
+  description: "Join our team of social media managers, graphics designers, video editors, and digital marketers at Aarohan.",
 };
 
 export default function CareersPage() {
@@ -18,7 +18,7 @@ export default function CareersPage() {
       <main className="flex-1">
         <PageHero
           title="Build Bold Brands With Us"
-          description="We are constantly searching for exceptional growth marketers, designers, and web developers who hate boring work."
+          description="We are constantly searching for exceptional social media managers, designers, video editors, and marketers who hate boring work."
           badge="Join Our Squad"
           breadcrumbs={[{ label: "Careers", href: "/careers" }]}
         />

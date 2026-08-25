@@ -7,37 +7,53 @@ import { Briefcase, MapPin, Clock } from "lucide-react";
 import { ApplicationModal } from "@/components/forms/application-modal";
 
 const jobs = [
-  { 
-    title: "Growth Marketing & Ad Lead", 
-    department: "Growth", 
-    location: "Remote (Global)", 
-    type: "Full-time", 
+  {
+    title: "Social Media Manager",
+    department: "Social Media",
+    location: "Kolkata / On-site",
+    type: "Full-time",
     tagBg: "bg-rose-500 text-white",
-    description: "Scale high-converting paid ad campaigns across Meta, Google, and TikTok for high-growth DTC & B2B brands."
+    description: "Own end-to-end content calendars, community engagement, and channel growth across Instagram, Facebook, LinkedIn, and YouTube."
   },
-  { 
-    title: "Senior UI/UX & Motion Designer", 
-    department: "Design", 
-    location: "New York / Hybrid", 
-    type: "Full-time", 
+  {
+    title: "Graphics Designer",
+    department: "Design",
+    location: "Kolkata / On-site",
+    type: "Full-time",
     tagBg: "bg-amber-400 text-slate-950",
-    description: "Craft breathtaking interfaces, fluid micro-animations, and dynamic brand identity design systems."
+    description: "Design scroll-stopping social creatives, brand collateral, and campaign visuals using Photoshop, Illustrator, and Figma."
   },
-  { 
-    title: "Senior Full-Stack Next.js Developer", 
-    department: "Engineering", 
-    location: "London / Hybrid", 
-    type: "Full-time", 
+  {
+    title: "Telecalling Executive",
+    department: "Sales",
+    location: "Kolkata / On-site",
+    type: "Full-time",
     tagBg: "bg-purple-600 text-white",
-    description: "Architect lightning-fast scalable web platforms and cloud-native backends using modern Next.js and React."
+    description: "Connect with inbound and outbound leads, qualify prospects, and book discovery calls for our client servicing team."
   },
-  { 
-    title: "Social Media & Performance Campaign Lead", 
-    department: "Strategy", 
-    location: "Remote (US)", 
-    type: "Full-time", 
+  {
+    title: "Video Editor",
+    department: "Production",
+    location: "Kolkata / On-site",
+    type: "Full-time",
     tagBg: "bg-emerald-500 text-slate-950",
-    description: "Drive viral storytelling, audience expansion, and omnichannel content strategies across global brand accounts."
+    description: "Cut punchy reels, ad films, and long-form brand videos with sharp pacing, motion graphics, and sound design."
+  },
+  {
+    title: "Social Media Marketing Executive",
+    department: "Marketing",
+    location: "Kolkata / Hybrid",
+    type: "Full-time",
+    tagBg: "bg-sky-500 text-slate-950",
+    description: "Plan and run paid social campaigns, test creatives, and scale audience reach across Meta and LinkedIn ad platforms."
+  },
+  {
+    title: "Digital Marketing Executive",
+    department: "Marketing",
+    location: "Kolkata / Hybrid",
+    type: "Full-time",
+    tagBg: "bg-indigo-500 text-white",
+    description: "Drive SEO, Google Ads, email, and analytics-led performance marketing to grow qualified traffic and conversions."
   },
 ];
 
