@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, Code, Megaphone, PenTool, Sparkles, Rocket, Compass } from "lucide-react";
+import { ArrowUpRight, Code, Megaphone, PenTool, Layers, Rocket, Compass } from "lucide-react";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Reveal } from "@/components/animations/reveal";
 import Link from "next/link";
@@ -69,7 +69,7 @@ export function ServicesPreview() {
           <div className="max-w-2xl">
             <FadeIn>
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs uppercase tracking-widest mb-3">
-                <Sparkles className="w-3.5 h-3.5" />
+                <Layers className="w-3.5 h-3.5" />
                 <span>Our Capabilities</span>
               </div>
             </FadeIn>

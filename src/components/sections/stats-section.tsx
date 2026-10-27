@@ -6,10 +6,10 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const stats = [
-  { value: 210, prefix: "+", suffix: "%", label: "Average Client ROI", emoji: "🚀" },
-  { value: 220, prefix: "", suffix: "+", label: "Global Campaigns & Builds", emoji: "🏆" },
-  { value: 330, prefix: "₹", suffix: "K+", label: "Ad Spend Managed", emoji: "🔥" },
-  { value: 94, prefix: "", suffix: "%", label: "Conversion Rate", emoji: "🌟" },
+  { value: 210, prefix: "+", suffix: "%", label: "Average Client ROI" },
+  { value: 220, prefix: "", suffix: "+", label: "Global Campaigns & Builds" },
+  { value: 330, prefix: "₹", suffix: "K+", label: "Ad Spend Managed" },
+  { value: 94, prefix: "", suffix: "%", label: "Conversion Rate" },
 ];
 
 export function StatsSection() {
@@ -27,8 +27,6 @@ export function StatsSection() {
             {stats.map((stat, idx) => (
               <FadeIn key={idx} delay={0.1 * idx} className="pt-4 sm:pt-0 sm:px-4 first:pt-0 first:px-0">
                 <div className="flex flex-col items-center text-center">
-                  <span className="text-xl mb-2">{stat.emoji}</span>
-                  
                   <div className="text-3xl sm:text-4xl md:text-5xl font-heading font-black tracking-tight text-white mb-1 flex items-baseline">
                     <span className="text-rose-400">{stat.prefix}</span>
                     {isInView ? (

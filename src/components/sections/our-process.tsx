@@ -2,7 +2,7 @@
 
 import { FadeIn } from "@/components/animations/fade-in";
 import { Reveal } from "@/components/animations/reveal";
-import { Compass, Palette, Rocket, TrendingUp, Sparkles } from "lucide-react";
+import { Compass, Palette, Rocket, TrendingUp } from "lucide-react";
 import { GRADIENT_PRESETS } from "@/config/theme-colors";
 
 const steps = [
@@ -54,7 +54,7 @@ export function OurProcess() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <FadeIn>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs uppercase tracking-widest mb-3">
-              <Sparkles className="w-3.5 h-3.5" />
+              <TrendingUp className="w-3.5 h-3.5" />
               <span>How We Deliver Growth</span>
             </div>
           </FadeIn>

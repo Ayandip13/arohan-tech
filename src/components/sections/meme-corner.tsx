@@ -3,8 +3,8 @@
 import React from "react";
 import { FadeIn } from "@/components/animations/fade-in";
 import { Reveal } from "@/components/animations/reveal";
-import { Smile, Image as ImageIcon, Sparkles, Flame, MessageSquare } from "lucide-react";
-import { FunkySticker, SmileyBadge, SpeechBubble } from "@/components/ui/funky-elements";
+import { Smile, Image as ImageIcon, Flame } from "lucide-react";
+import { SpeechBubble } from "@/components/ui/funky-elements";
 
 export interface MemePlaceholderProps {
   title: string;
@@ -116,7 +116,7 @@ export function MemeCornerSection() {
 
           <FadeIn delay={0.2}>
             <p className="text-muted-foreground text-sm md:text-base font-normal mt-3">
-              Because marketing without humor is just metrics! Here's where our team shares weekly agency reality checks and memes.
+              Because marketing without humor is just metrics! Here&apos;s where our team shares weekly agency reality checks and memes.
             </p>
           </FadeIn>
         </div>

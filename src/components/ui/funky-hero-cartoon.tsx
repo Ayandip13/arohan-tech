@@ -117,7 +117,7 @@ export function FunkyHeroCartoon({ className = "w-full h-auto" }: { className?: 
             </text>
           </g>
 
-          {/* 4. Doodles & Sparkles */}
+          {/* 4. Doodles & Geometric Stars */}
           <g transform="translate(390, 260)">
             <polygon points="15,0 20,10 30,15 20,20 15,30 10,20 0,15 10,10" fill="#fbbf24" />
           </g>

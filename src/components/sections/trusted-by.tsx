@@ -1,7 +1,7 @@
 "use client";
 
 import { FadeIn } from "@/components/animations/fade-in";
-import { Sparkles, Trophy, Award } from "lucide-react";
+import { Trophy } from "lucide-react";
 
 const logos = [
   { name: "Tesla", category: "EV & Tech" },

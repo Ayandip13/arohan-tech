@@ -2,7 +2,7 @@
 
 import { FadeIn } from "@/components/animations/fade-in";
 import { Reveal } from "@/components/animations/reveal";
-import { Zap, HeartHandshake, Sparkles, CheckCircle2, Flame, Award } from "lucide-react";
+import { Zap, HeartHandshake, Palette, CheckCircle2, Flame, Award } from "lucide-react";
 import { BrainstormingIllustration } from "@/components/ui/marketing-illustrations";
 import { GRADIENT_PRESETS, BADGE_COLOR_PRESETS } from "@/config/theme-colors";
 
@@ -15,7 +15,7 @@ const features = [
     description: "We don't care about vanity metrics. Every campaign, line of copy, and visual asset is built to drive real revenue and scale audience reach.",
   },
   {
-    icon: <Sparkles className="w-4 h-4" />,
+    icon: <Palette className="w-4 h-4" />,
     badge: "Creative Edge",
     color: GRADIENT_PRESETS.secondary,
     title: "Award-Winning Creative Vision",

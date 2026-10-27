@@ -3,7 +3,7 @@
 import { FadeIn } from "@/components/animations/fade-in";
 import { Reveal } from "@/components/animations/reveal";
 import Link from "next/link";
-import { ChevronRight, Sparkles } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 interface PageHeroProps {
   title: string;
@@ -40,7 +40,7 @@ export function PageHero({ title, description, badge, breadcrumbs }: PageHeroPro
         {badge && (
           <FadeIn delay={0.2}>
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-black text-xs uppercase tracking-widest mb-6">
-              <Sparkles className="w-3.5 h-3.5" />
+              <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
               <span>{badge}</span>
             </div>
           </FadeIn>

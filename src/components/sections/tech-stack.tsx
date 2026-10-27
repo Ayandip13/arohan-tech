@@ -15,7 +15,7 @@ import {
   Eye,
   Send,
   TrendingUp,
-  Sparkles
+  Workflow
 } from "lucide-react";
 import { FunkySticker } from "@/components/ui/funky-elements";
 
@@ -142,7 +142,7 @@ export function TechStack() {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <FadeIn>
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs uppercase tracking-widest mb-4">
-              <Sparkles className="w-4 h-4" />
+              <Workflow className="w-4 h-4" />
               <span>Proven Growth Methodology</span>
             </div>
           </FadeIn>

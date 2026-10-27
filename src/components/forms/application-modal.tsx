@@ -11,7 +11,7 @@ import {
   Lock, 
   UploadCloud, 
   FileText, 
-  Sparkles, 
+  CheckCircle2, 
   Briefcase 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -218,11 +218,11 @@ export function ApplicationModal({ isOpen, jobRole, onClose }: ApplicationModalP
                     <CheckCircle className="w-8 h-8" />
                   </div>
                   <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-500 font-bold text-xs mb-3">
-                    <Sparkles className="w-3.5 h-3.5" />
+                    <CheckCircle2 className="w-3.5 h-3.5" />
                     <span>Application Received</span>
                   </div>
                   <h4 className="text-2xl md:text-3xl font-heading font-black text-foreground mb-2">
-                    You're On Our Radar! 🚀
+                    You&apos;re On Our Radar! 🚀
                   </h4>
                   <p className="text-muted-foreground text-sm max-w-md mb-8 leading-relaxed">
                     Thank you for submitting your application for <strong className="text-foreground font-bold">{jobRole}</strong>. Our recruiting squad will review your background and reach out soon if there is a strong mutual fit.

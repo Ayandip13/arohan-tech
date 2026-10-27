@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight, Sparkles, ArrowUp, Heart } from "lucide-react";
+import { ArrowUpRight, Flame, ArrowUp, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Footer() {
@@ -23,8 +23,8 @@ export function Footer() {
         <div className="mb-16 pb-12 border-b border-border/80 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/10 text-rose-500 font-extrabold text-xs uppercase tracking-widest mb-4">
-              <Sparkles className="w-4 h-4" />
-              <span>Let's Create Magic</span>
+              <Flame className="w-4 h-4" />
+              <span>Let&apos;s Create Magic</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-heading font-black tracking-tight leading-tight">
               Ready to elevate your brand to <span className="gradient-text-coral-amber">unprecedented heights?</span>
@@ -40,8 +40,8 @@ export function Footer() {
         </div>
 
         {/* Grid Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          <div className="lg:col-span-2 space-y-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mb-12">
+          <div className="sm:col-span-2 md:col-span-3 lg:col-span-2 space-y-5">
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
                 <Image
@@ -101,6 +101,15 @@ export function Footer() {
               <li><Link href="/contact" className="text-muted-foreground hover:text-rose-500 transition-colors">Get in Touch</Link></li>
             </ul>
           </div>
+
+          <div>
+            <h3 className="font-heading font-extrabold text-foreground mb-4 text-base">Policies</h3>
+            <ul className="flex flex-col gap-2.5 font-medium text-xs">
+              <li><Link href="/privacy-policy" className="text-muted-foreground hover:text-rose-500 transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-muted-foreground hover:text-rose-500 transition-colors">Terms &amp; Conditions</Link></li>
+              <li><Link href="/return-refund-policy" className="text-muted-foreground hover:text-rose-500 transition-colors">Return &amp; Refund Policy</Link></li>
+            </ul>
+          </div>
         </div>
 
         {/* Bottom Bar */}
@@ -109,9 +118,10 @@ export function Footer() {
             &copy; {currentYear} Aarohan Creative Agency. Crafted with <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" /> for growth-driven brands.
           </p>
 
-          <div className="flex items-center gap-5 text-xs font-medium text-muted-foreground">
+          <div className="flex flex-wrap items-center justify-center gap-5 text-xs font-medium text-muted-foreground">
             <Link href="/privacy-policy" className="hover:text-foreground transition-colors">Privacy</Link>
             <Link href="/terms" className="hover:text-foreground transition-colors">Terms</Link>
+            <Link href="/return-refund-policy" className="hover:text-foreground transition-colors">Return &amp; Refund</Link>
             <Link href="/cookie-policy" className="hover:text-foreground transition-colors hidden sm:block">Cookies</Link>
             <button
               onClick={scrollToTop}

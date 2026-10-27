@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
-import { Menu, X, Search, Sparkles, ArrowUpRight } from "lucide-react";
+import { Menu, X, Search, Compass, ArrowUpRight } from "lucide-react";
 import { ThemeSwitch } from "./theme-switch";
 import { SearchModal } from "@/components/ui/search-modal";
 import { Button } from "@/components/ui/button";
@@ -101,7 +101,7 @@ export function Navbar() {
 
             <Link href="/contact">
               <Button variant="gradient" size="default" className="rounded-full shadow-lg shadow-rose-500/20">
-                <span>Let's Talk</span>
+                <span>Let&apos;s Talk</span>
                 <ArrowUpRight className="w-4 h-4" />
               </Button>
             </Link>
@@ -141,7 +141,7 @@ export function Navbar() {
           >
             <div className="px-6 py-8 flex flex-col gap-4">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-500/10 text-rose-500 text-xs font-bold uppercase tracking-wider w-fit">
-                <Sparkles className="w-3.5 h-3.5" />
+                <Compass className="w-3.5 h-3.5" />
                 <span>Navigation</span>
               </div>
 

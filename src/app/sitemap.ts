@@ -12,6 +12,9 @@ export default function sitemap() {
     '/contact',
     '/blog',
     '/faq',
+    '/privacy-policy',
+    '/terms',
+    '/return-refund-policy',
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString(),

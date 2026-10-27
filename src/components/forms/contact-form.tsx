@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, AlertCircle, Send, Sparkles } from "lucide-react";
+import { CheckCircle, AlertCircle, Send } from "lucide-react";
 
 export function ContactForm() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -39,7 +40,7 @@ export function ContactForm() {
   return (
     <>
       <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-rose-500 mb-2">
-        <Sparkles className="w-4 h-4" />
+        <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
         <span>Direct Agency Connect</span>
       </div>
       <h3 className="text-3xl font-black font-heading mb-6 text-foreground">Start Your Growth Project</h3>
@@ -124,6 +125,19 @@ export function ContactForm() {
             </span>
           )}
         </Button>
+
+        <div className="pt-3 text-center">
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Please review our{" "}
+            <Link
+              href="/return-refund-policy"
+              className="text-foreground font-semibold underline underline-offset-4 decoration-rose-500/60 hover:text-rose-500 transition-colors"
+            >
+              service terms
+            </Link>{" "}
+            before confirming your project. Our services are non-refundable.
+          </p>
+        </div>
       </form>
     </>
   );
